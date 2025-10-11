@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/orientable_with_bottom",
+  "textures": {
+    "bottom": "eidolon_edoni:block/elder_stove_bottom",
+    "front": "eidolon_edoni:block/elder_stove_front_on",
+    "side": "eidolon_edoni:block/elder_stove_side",
+    "top": "farmersdelight:block/stove_top_on"
+  }
+}

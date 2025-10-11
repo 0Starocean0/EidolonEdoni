@@ -1,0 +1,25 @@
+{
+  "type": "eidolon_repraised:crucible",
+  "steps": [
+    {
+      "items": [
+        { "item": "eidolon_repraised:tallow" },
+        { "item": "eidolon_repraised:tallow" }
+      ]
+    },
+    {
+      "stirs": 1
+    },
+    {
+      "items": [
+        {
+          "item": "eidolon_repraised:zombie_heart"
+        }
+      ]
+    }
+  ],
+  "result": {
+    "id": "eidolon_edoni:fried_heart",
+    "count": 1
+  }
+}

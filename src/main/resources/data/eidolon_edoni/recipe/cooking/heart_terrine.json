@@ -1,0 +1,20 @@
+{
+  "type": "farmersdelight:cooking",
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "eidolon_repraised:zombie_heart"
+    },
+    {
+      "item": "eidolon_repraised:wraith_heart"
+    },
+    {
+      "item": "eidolon_repraised:withered_heart"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "count": 1,
+    "id": "eidolon_edoni:heart_terrine"
+  }
+}

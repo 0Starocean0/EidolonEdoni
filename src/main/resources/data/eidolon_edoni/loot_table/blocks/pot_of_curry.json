@@ -1,0 +1,46 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "name": "pool1",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "eidolon_edoni:pot_of_curry"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:block_state_property",
+          "block": "eidolon_edoni:pot_of_curry",
+          "properties": {
+            "servings": "4"
+          }
+        }
+      ]
+    },
+    {
+      "name": "pool2",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bucket"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:block_state_property",
+            "block": "eidolon_edoni:pot_of_curry",
+            "properties": {
+              "servings": "4"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "type": "farmersdelight:cooking",
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "eidolon_repraised:sildrian_seed"
+    },
+    {
+      "tag": "c:crops/wheat"
+    },
+    {
+      "tag": "c:crops/grain"
+    },
+    {
+      "tag": "c:seeds"
+    },
+    {
+      "tag": "c:foods/milk"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "count": 1,
+    "id": "eidolon_edoni:mixed_porridge"
+  }
+}

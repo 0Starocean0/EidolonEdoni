@@ -1,0 +1,21 @@
+{
+  "type": "farmersdelight:cooking",
+  "cookingtime": 100,
+  "experience": 0.35,
+  "ingredients": [
+    {
+      "tag": "c:foods/milk"
+    },
+    {
+      "item": "eidolon_repraised:tallow"
+    },
+    {
+      "item": "eidolon_repraised:merammer_resin"
+    }
+  ],
+  "recipe_book_tab": "misc",
+  "result": {
+    "count": 1,
+    "id": "eidolon_edoni:bechamel_sauce"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "eidolon_edoni:roasted_avennian_sprig_bale"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "eidolon_edoni:blocks/roasted_avennian_sprig_bale"
+}

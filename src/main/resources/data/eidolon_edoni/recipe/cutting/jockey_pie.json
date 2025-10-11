@@ -1,0 +1,19 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "eidolon_edoni:jockey_pie"
+    }
+  ],
+  "result": [
+    {
+      "item": {
+        "count": 4,
+        "id": "eidolon_edoni:jockey_pie_slice"
+      }
+    }
+  ],
+  "tool": {
+    "tag": "c:tools/knife"
+  }
+}

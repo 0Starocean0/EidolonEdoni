@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "oanna_mooncake",
+  "key": {
+    "#": {
+      "item": "eidolon_edoni:oanna_mooncake_slice"
+    }
+  },
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "result": {
+    "count": 1,
+    "id": "eidolon_edoni:oanna_mooncake"
+  }
+}

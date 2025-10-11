@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "fd_cabinet",
+  "key": {
+    "D": {
+      "tag": "minecraft:wooden_trapdoors"
+    },
+    "_": {
+      "item": "eidolon_repraised:illwood_planks_slab"
+    }
+  },
+  "pattern": [
+    "___",
+    "D D",
+    "___"
+  ],
+  "result": {
+    "count": 1,
+    "id": "eidolon_edoni:illwood_cabinet"
+  }
+}

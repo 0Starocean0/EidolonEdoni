@@ -1,0 +1,10 @@
+{
+  "parent": "farmersdelight:block/pie_slice1",
+  "textures": {
+    "particle": "eidolon_edoni:block/jockey_pie_top",
+    "bottom": "farmersdelight:block/pie_bottom",
+    "inner": "eidolon_edoni:block/jockey_pie_inner",
+    "side": "farmersdelight:block/pie_side",
+    "top": "eidolon_edoni:block/jockey_pie_top"
+  }
+}

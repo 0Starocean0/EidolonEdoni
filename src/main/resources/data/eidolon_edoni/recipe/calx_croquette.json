@@ -1,0 +1,36 @@
+{
+  "type": "eidolon_repraised:crucible",
+  "steps": [
+    {
+      "items": [
+        { "item": "eidolon_repraised:tallow" },
+        { "item": "eidolon_repraised:tallow" }
+      ]
+    },
+    {
+      "stirs": 1
+    },
+    {
+      "items": [
+        { "item": "eidolon_repraised:ender_calx" },
+        { "item": "minecraft:baked_potato" }
+      ]
+    },
+    {
+      "items": [
+        { "tag": "c:crops/onion" },
+        { "item": "eidolon_repraised:mirecap" },
+        { "item": "eidolon_repraised:mirecap" }
+      ]
+    },
+    {
+      "items": [
+        { "item": "minecraft:bowl" }
+      ]
+    }
+  ],
+  "result": {
+    "id": "eidolon_edoni:calx_croquette",
+    "count": 1
+  }
+}

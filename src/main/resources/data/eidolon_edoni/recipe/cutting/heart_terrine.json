@@ -1,0 +1,19 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "eidolon_edoni:heart_terrine"
+    }
+  ],
+  "result": [
+    {
+      "item": {
+        "count": 4,
+        "id": "eidolon_edoni:heart_terrine_slice"
+      }
+    }
+  ],
+  "tool": {
+    "tag": "c:tools/knife"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "eidolon_edoni:block/avennian_sprig_bale",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "eidolon_edoni:block/avennian_sprig_bale",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "eidolon_edoni:block/avennian_sprig_bale",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "eidolon_edoni:block/avennian_sprig_bale",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
+      "model": "eidolon_edoni:block/avennian_sprig_bale"
+    },
+    "facing=west": {
+      "model": "eidolon_edoni:block/avennian_sprig_bale",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "jockey_pie",
+  "key": {
+    "C": {
+      "tag": "c:cooked_chicken"
+    },
+    "M": {
+      "item": "eidolon_repraised:mirecap"
+    },
+    "P": {
+      "item": "farmersdelight:pie_crust"
+    },
+    "Z": {
+      "tag": "eidolon_repraised:zombie_food"
+    }
+  },
+  "pattern": [
+    "MMM",
+    "CCC",
+    "ZPZ"
+  ],
+  "result": {
+    "count": 1,
+    "id": "eidolon_edoni:jockey_pie"
+  }
+}

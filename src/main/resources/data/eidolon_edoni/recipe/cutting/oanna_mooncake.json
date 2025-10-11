@@ -1,0 +1,19 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "eidolon_edoni:oanna_mooncake"
+    }
+  ],
+  "result": [
+    {
+      "item": {
+        "count": 4,
+        "id": "eidolon_edoni:oanna_mooncake_slice"
+      }
+    }
+  ],
+  "tool": {
+    "tag": "c:tools/knife"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "eidolon_edoni:item/stuffed_wither_skeleton_skull_bowl"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "farmersdelight:block/crate_bottom",
+    "side": "eidolon_edoni:block/merammer_root_crate_side",
+    "top": "eidolon_edoni:block/merammer_root_crate_top"
+  }
+}

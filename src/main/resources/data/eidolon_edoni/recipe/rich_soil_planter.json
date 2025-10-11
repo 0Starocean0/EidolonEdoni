@@ -1,0 +1,34 @@
+{
+  "type": "eidolon_repraised:worktable",
+  "pattern": [
+    "ywy",
+    "zxz",
+    "z z"
+  ],
+  "reagents": [
+    "a s "
+  ],
+  "key": {
+    "x": {
+      "item": "eidolon_repraised:gold_inlay"
+    },
+    "y": {
+      "tag": "c:ingots/arcane_gold"
+    },
+    "z": {
+      "tag": "minecraft:planks"
+    },
+    "w": {
+      "item": "farmersdelight:rich_soil"
+    },
+    "a": {
+      "item": "eidolon_repraised:enchanted_ash"
+    },
+    "s": {
+      "item": "eidolon_repraised:soul_shard"
+    }
+  },
+  "result": {
+    "id": "eidolon_edoni:rich_soil_planter"
+  }
+}

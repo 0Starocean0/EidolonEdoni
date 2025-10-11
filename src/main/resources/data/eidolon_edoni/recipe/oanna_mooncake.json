@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "oanna_mooncake",
+  "key": {
+    "E": {
+      "tag": "c:eggs"
+    },
+    "M": {
+      "tag": "c:foods/milk"
+    },
+    "O": {
+      "item": "eidolon_repraised:oanna_bloom"
+    },
+    "P": {
+      "item": "farmersdelight:pie_crust"
+    },
+    "S": {
+      "item": "minecraft:sugar"
+    }
+  },
+  "pattern": [
+    "OOO",
+    "EME",
+    "SPS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "eidolon_edoni:oanna_mooncake"
+  }
+}

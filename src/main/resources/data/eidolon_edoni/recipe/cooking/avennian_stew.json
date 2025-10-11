@@ -1,0 +1,20 @@
+{
+  "type": "farmersdelight:cooking",
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "eidolon_repraised:avennian_sprig"
+    },
+    {
+      "item": "eidolon_repraised:avennian_sprig"
+    },
+    {
+      "tag": "c:foods/raw_pork"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "count": 1,
+    "id": "eidolon_edoni:avennian_stew"
+  }
+}

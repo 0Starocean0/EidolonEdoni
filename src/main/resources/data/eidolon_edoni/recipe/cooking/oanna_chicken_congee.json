@@ -1,0 +1,20 @@
+{
+  "type": "farmersdelight:cooking",
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "eidolon_repraised:oanna_bloom"
+    },
+    {
+      "item": "farmersdelight:rice"
+    },
+    {
+      "tag": "c:foods/raw_chicken"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "count": 1,
+    "id": "eidolon_edoni:oanna_chicken_congee"
+  }
+}

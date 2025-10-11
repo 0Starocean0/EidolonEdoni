@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "jockey_pie",
+  "key": {
+    "#": {
+      "item": "eidolon_edoni:jockey_pie_slice"
+    }
+  },
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "result": {
+    "count": 1,
+    "id": "eidolon_edoni:jockey_pie"
+  }
+}

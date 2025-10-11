@@ -1,0 +1,29 @@
+{
+  "type": "eidolon_repraised:crucible",
+  "steps": [
+    {
+      "items": [
+        { "item": "eidolon_repraised:tallow" },
+        { "item": "eidolon_repraised:tallow" }
+      ]
+    },
+    {
+      "stirs": 1
+    },
+    {
+      "items": [
+        { "item": "farmersdelight:wheat_dough" }
+      ]
+    },
+    {
+      "items": [
+        { "item": "eidolon_repraised:avennian_sprig" },
+        { "item": "eidolon_repraised:avennian_sprig" }
+      ]
+    }
+  ],
+  "result": {
+    "id": "eidolon_edoni:fried_avenna_dumpling",
+    "count": 2
+  }
+}

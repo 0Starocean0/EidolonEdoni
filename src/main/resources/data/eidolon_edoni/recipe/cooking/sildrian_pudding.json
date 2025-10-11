@@ -1,0 +1,33 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "count": 1,
+    "id": "minecraft:glass_bottle"
+  },
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "tag": "c:milk"
+    },
+    {
+      "tag": "c:milk"
+    },
+    {
+      "tag": "c:eggs"
+    },
+    {
+      "tag": "c:eggs"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "eidolon_repraised:sildrian_seed"
+    }
+  ],
+  "recipe_book_tab": "misc",
+  "result": {
+    "count": 1,
+    "id": "eidolon_edoni:sildrian_pudding"
+  }
+}

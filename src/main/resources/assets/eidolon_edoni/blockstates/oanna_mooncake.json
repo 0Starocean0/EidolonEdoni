@@ -1,0 +1,64 @@
+{
+  "variants": {
+    "bites=0,facing=east": {
+      "model": "eidolon_edoni:block/oanna_mooncake",
+      "y": 90
+    },
+    "bites=0,facing=north": {
+      "model": "eidolon_edoni:block/oanna_mooncake"
+    },
+    "bites=0,facing=south": {
+      "model": "eidolon_edoni:block/oanna_mooncake",
+      "y": 180
+    },
+    "bites=0,facing=west": {
+      "model": "eidolon_edoni:block/oanna_mooncake",
+      "y": 270
+    },
+    "bites=1,facing=east": {
+      "model": "eidolon_edoni:block/oanna_mooncake_slice1",
+      "y": 90
+    },
+    "bites=1,facing=north": {
+      "model": "eidolon_edoni:block/oanna_mooncake_slice1"
+    },
+    "bites=1,facing=south": {
+      "model": "eidolon_edoni:block/oanna_mooncake_slice1",
+      "y": 180
+    },
+    "bites=1,facing=west": {
+      "model": "eidolon_edoni:block/oanna_mooncake_slice1",
+      "y": 270
+    },
+    "bites=2,facing=east": {
+      "model": "eidolon_edoni:block/oanna_mooncake_slice2",
+      "y": 90
+    },
+    "bites=2,facing=north": {
+      "model": "eidolon_edoni:block/oanna_mooncake_slice2"
+    },
+    "bites=2,facing=south": {
+      "model": "eidolon_edoni:block/oanna_mooncake_slice2",
+      "y": 180
+    },
+    "bites=2,facing=west": {
+      "model": "eidolon_edoni:block/oanna_mooncake_slice2",
+      "y": 270
+    },
+    "bites=3,facing=east": {
+      "model": "eidolon_edoni:block/oanna_mooncake_slice3",
+      "y": 90
+    },
+    "bites=3,facing=north": {
+      "model": "eidolon_edoni:block/oanna_mooncake_slice3"
+    },
+    "bites=3,facing=south": {
+      "model": "eidolon_edoni:block/oanna_mooncake_slice3",
+      "y": 180
+    },
+    "bites=3,facing=west": {
+      "model": "eidolon_edoni:block/oanna_mooncake_slice3",
+      "y": 270
+    }
+  }
+}

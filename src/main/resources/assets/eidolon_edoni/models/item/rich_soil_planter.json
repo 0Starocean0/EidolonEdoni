@@ -1,0 +1,9 @@
+{
+	"parent": "eidolon_repraised:item/planter",
+	"textures": {
+		"0": "eidolon_edoni:block/rich_soil_planter_side",
+		"1": "eidolon_repraised:block/planter_bottom",
+		"2": "eidolon_edoni:block/rich_soil_planter_soil",
+		"particle": "eidolon_edoni:block/rich_soil_planter_side"
+	}
+}

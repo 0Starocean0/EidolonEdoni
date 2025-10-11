@@ -1,0 +1,33 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "count": 1,
+    "id": "minecraft:bucket"
+  },
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "eidolon_repraised:merammer_resin"
+    },
+    {
+      "tag": "eidolon_edoni:curry_spices"
+    },
+    {
+      "tag": "eidolon_edoni:curry_spices"
+    },
+    {
+      "tag": "eidolon_edoni:curry_spices"
+    },
+    {
+      "tag": "c:crops/potato"
+    },
+    {
+      "tag": "c:crops/carrot"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "count": 1,
+    "id": "eidolon_edoni:pot_of_curry"
+  }
+}

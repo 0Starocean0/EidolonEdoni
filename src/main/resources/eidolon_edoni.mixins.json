@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "package": "cn.nutminds.eidolonedoni.mixin",
+  "mixins": [
+    "RichSoilPlanterMixin",
+    "EidolonEventsMixin"
+  ],
+  "client": [
+  ],
+  "server": [
+  ],
+  "compatibilityLevel": "JAVA_21",
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

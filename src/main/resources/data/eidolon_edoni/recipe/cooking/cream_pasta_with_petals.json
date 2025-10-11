@@ -1,0 +1,23 @@
+{
+  "type": "farmersdelight:cooking",
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "eidolon_repraised:oanna_bloom"
+    },
+    {
+      "tag": "c:foods/pasta"
+    },
+    {
+      "tag": "c:foods/leafy_green"
+    },
+    {
+      "item": "eidolon_edoni:bechamel_sauce"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "count": 1,
+    "id": "eidolon_edoni:cream_pasta_with_petals"
+  }
+}

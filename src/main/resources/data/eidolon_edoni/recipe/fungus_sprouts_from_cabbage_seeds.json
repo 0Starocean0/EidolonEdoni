@@ -1,0 +1,25 @@
+{
+  "type": "eidolon_repraised:crucible",
+  "steps": [
+    {
+      "items": [
+        { "tag": "c:mushrooms" }
+      ]
+    },
+    {
+      "stirs": 2,
+      "items": [
+        { "item": "minecraft:bone_meal" }
+      ]
+    },
+    {
+      "items": [
+        { "item": "farmersdelight:cabbage_seeds" }
+      ]
+    }
+  ],
+  "result": {
+    "id": "eidolon_repraised:fungus_sprouts",
+    "count": 2
+  }
+}

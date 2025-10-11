@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "fd_rice",
+  "ingredients": [
+    {
+      "item": "eidolon_edoni:sildrian_seed"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "eidolon_repraised:sildrian_seed_bag"
+  }
+}

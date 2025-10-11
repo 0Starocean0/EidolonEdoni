@@ -1,0 +1,6 @@
+{
+  "parent": "farmersdelight:item/mug",
+  "textures": {
+    "layer0": "eidolon_edoni:item/sildrian_tea"
+  }
+}

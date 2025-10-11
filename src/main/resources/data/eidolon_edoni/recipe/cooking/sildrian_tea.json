@@ -1,0 +1,20 @@
+{
+  "type": "farmersdelight:cooking",
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "eidolon_repraised:sildrian_seed"
+    },
+    {
+      "item": "eidolon_repraised:sildrian_seed"
+    },
+    {
+      "item": "minecraft:charcoal"
+    }
+  ],
+  "recipe_book_tab": "drinks",
+  "result": {
+    "count": 1,
+    "id": "eidolon_edoni:sildrian_tea"
+  }
+}

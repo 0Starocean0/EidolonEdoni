@@ -1,0 +1,26 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "eidolon_repraised:tattered_cloth"
+    }
+  ],
+  "result": [
+    {
+      "item": {
+        "count": 2,
+        "id": "minecraft:string"
+      }
+    },
+    {
+      "chance": 0.25,
+      "item": {
+        "count": 1,
+        "id": "minecraft:string"
+      }
+    }
+  ],
+  "tool": {
+    "tag": "c:tools/shear"
+  }
+}
