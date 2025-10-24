@@ -1,0 +1,30 @@
+{
+  "type": "eidolon_repraised:crucible",
+  "steps": [
+    {
+      "items": [
+        { "item": "eidolon_repraised:sildrian_seed" },
+        { "item": "minecraft:fermented_spider_eye" }
+      ]
+    },
+    {
+      "items": [
+        { "tag": "c:dusts/redstone" },
+        { "tag": "c:dusts/redstone" },
+        { "tag": "c:dusts/redstone" }
+      ]
+    },
+    {
+      "items": [
+        {
+          "item": "eidolon_repraised:bloodlust_incense"
+        }
+      ],
+      "stirs": 1
+    }
+  ],
+  "result": {
+    "id": "eidolon_edoni:stimulating_incense",
+    "count": 1
+  }
+}

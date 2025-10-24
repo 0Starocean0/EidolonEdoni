@@ -1,0 +1,12 @@
+{
+  "type": "eidolon_repraised:athame_foraging",
+  "block": [
+    {
+      "item": "farmersdelight:wild_carrots"
+    }
+  ],
+  "output": {
+    "count": 1,
+    "id": "eidolon_repraised:merammer_root"
+  }
+}

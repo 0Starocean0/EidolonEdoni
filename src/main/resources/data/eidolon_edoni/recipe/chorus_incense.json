@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "eidolon_repraised:merammer_resin"
+    },
+    {
+      "item": "eidolon_repraised:oanna_bloom"
+    },
+    {
+      "item": "minecraft:chorus_flower"
+    },
+    {
+      "tag": "c:gems/amethyst"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "eidolon_edoni:chorus_incense"
+  }
+}

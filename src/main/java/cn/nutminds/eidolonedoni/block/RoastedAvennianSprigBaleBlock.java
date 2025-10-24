@@ -35,15 +35,15 @@ public class RoastedAvennianSprigBaleBlock extends AvennianSprigBaleBlock{
     protected static final VoxelShape SHAPE_N_1  = Block.box(0.0D, 0.0D, 4.0D, 16.0D, 16.0D, 16.0D);
     protected static final VoxelShape SHAPE_N_2  = Block.box(0.0D, 0.0D, 8.0D, 16.0D, 16.0D, 16.0D);
     protected static final VoxelShape SHAPE_N_3  = Block.box(0.0D, 0.0D, 12.0D, 16.0D, 16.0D, 16.0D);
-    protected static final VoxelShape SHAPE_S_1  = Block.box(0.0D, 0.0D, 0.0D, 16.0D, 16.0D, 4.0D);
+    protected static final VoxelShape SHAPE_S_1  = Block.box(0.0D, 0.0D, 0.0D, 16.0D, 16.0D, 12.0D);
     protected static final VoxelShape SHAPE_S_2  = Block.box(0.0D, 0.0D, 0.0D, 16.0D, 16.0D, 8.0D);
-    protected static final VoxelShape SHAPE_S_3  = Block.box(0.0D, 0.0D, 0.0D, 16.0D, 16.0D, 12.0D);
+    protected static final VoxelShape SHAPE_S_3  = Block.box(0.0D, 0.0D, 0.0D, 16.0D, 16.0D, 4.0D);
     protected static final VoxelShape SHAPE_W_1  = Block.box(4.0D, 0.0D, 0.0D, 16.0D, 16.0D, 16.0D);
     protected static final VoxelShape SHAPE_W_2  = Block.box(8.0D, 0.0D, 0.0D, 16.0D, 16.0D, 16.0D);
     protected static final VoxelShape SHAPE_W_3  = Block.box(12.0D, 0.0D, 0.0D, 16.0D, 16.0D, 16.0D);
-    protected static final VoxelShape SHAPE_E_1  = Block.box(0.0D, 0.0D, 0.0D, 4.0D, 16.0D, 16.0D);
+    protected static final VoxelShape SHAPE_E_1  = Block.box(0.0D, 0.0D, 0.0D, 12.0D, 16.0D, 16.0D);
     protected static final VoxelShape SHAPE_E_2  = Block.box(0.0D, 0.0D, 0.0D, 8.0D, 16.0D, 16.0D);
-    protected static final VoxelShape SHAPE_E_3  = Block.box(0.0D, 0.0D, 0.0D, 12.0D, 16.0D, 16.0D);
+    protected static final VoxelShape SHAPE_E_3  = Block.box(0.0D, 0.0D, 0.0D, 4.0D, 16.0D, 16.0D);
 
     public VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
         Direction direction = state.getValue(FACING);

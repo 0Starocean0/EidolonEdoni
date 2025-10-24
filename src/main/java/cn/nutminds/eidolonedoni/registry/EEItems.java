@@ -1,5 +1,6 @@
 package cn.nutminds.eidolonedoni.registry;
 
+import alexthw.eidolon_repraised.common.item.ItemBase;
 import alexthw.eidolon_repraised.common.item.Tiers;
 import cn.nutminds.eidolonedoni.EEFoodValues;
 import cn.nutminds.eidolonedoni.EidolonEdoni;
@@ -9,6 +10,7 @@ import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.Rarity;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import vectorwing.farmersdelight.common.item.ConsumableItem;
@@ -31,10 +33,24 @@ public class EEItems {
     }
 
     public static final DeferredHolder<Item, Item> SILVER_KNIFE = ITEMS.register("silver_knife",
-            () -> new KnifeItem(Tiers.SilverTier.INSTANCE, new Item.Properties().attributes(KnifeItem.createAttributes(Tiers.SilverTier.INSTANCE, 0.5f, -2.0f))));
+            () -> new KnifeItem(Tiers.SilverTier.INSTANCE, new Item.Properties().attributes(
+                    KnifeItem.createAttributes(Tiers.SilverTier.INSTANCE, 0.5f, -2.0f))));
+
+    public static final DeferredHolder<Item, Item> ALL_ROUNDER = ITEMS.register("all_rounder",
+            () -> new AllRounderItem(Tiers.MagicToolTier.INSTANCE, new Item.Properties().attributes(
+                    KnifeItem.createAttributes(Tiers.MagicToolTier.INSTANCE, 1f, -1.6f)).rarity(Rarity.UNCOMMON)));
 
     public static final DeferredHolder<Item, BlockItem> ELDER_STOVE = ITEMS.register("elder_stove",
             () -> new BlockItem(EEBlocks.ELDER_STOVE.get(), new Item.Properties()));
+
+    public static final Supplier<Item> RELAXING_INCENSE = ITEMS.register("relaxing_incense",
+            () -> new ItemBase(new Item.Properties()).setLore("lore.eidolon_edoni.relaxing_incense"));
+    public static final Supplier<Item> CHORUS_INCENSE = ITEMS.register("chorus_incense",
+            () -> new ItemBase(new Item.Properties()).setLore("lore.eidolon_edoni.chorus_incense"));
+    public static final Supplier<Item> STIMULATING_INCENSE = ITEMS.register("stimulating_incense",
+            () -> new ItemBase(new Item.Properties()).setLore("lore.eidolon_edoni.stimulating_incense"));
+    public static final Supplier<Item> GLUTTONY_INCENSE = ITEMS.register("gluttony_incense",
+            () -> new ItemBase(new Item.Properties()).setLore("lore.eidolon_edoni.gluttony_incense"));
 
     public static final DeferredHolder<Item, BlockItem> SILDRIAN_SEED_BAG = ITEMS.register("sildrian_seed_bag",
             () -> new BlockItem(EEBlocks.SILDRIAN_SEED_BAG.get(), new Item.Properties()));

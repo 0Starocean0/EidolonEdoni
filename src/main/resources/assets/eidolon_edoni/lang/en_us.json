@@ -49,5 +49,18 @@
   "item.eidolon_edoni.mirechoco": "Mirechoco",
   "effect.eidolon_edoni.reanimate": "Reanimate",
   "item.eidolon_edoni.fried_heart": "Fried Heart",
-  "item.eidolon_edoni.jelly_slug": "Jelly Slug"
+  "item.eidolon_edoni.jelly_slug": "Jelly Slug",
+  "item.eidolon_edoni.all_rounder": "All-Rounder",
+  "item.eidolon_edoni.all_rounder.lore.dark": "The dark lord is pleased and awarded your tool with their §1§oNecrotic§r power.",
+  "item.eidolon_edoni.all_rounder.lore.light": "The light lord is pleased and §6§oBlessed§r your tool with their holy power.",
+  "item.eidolon_edoni.all_rounder.lore.balance": "Both the deities are pleased well, now your tool has both of their powers as the reward of being a double-dealer.",
+  "item.eidolon_edoni.all_rounder.lore.none": "None of the deities have noticed you.",
+  "item.eidolon_edoni.relaxing_incense": "Relaxing Incense",
+  "lore.eidolon_edoni.relaxing_incense": "Smells like peaceful and comfort.",
+  "item.eidolon_edoni.chorus_incense": "Chorus Incense",
+  "lore.eidolon_edoni.chorus_incense": "As its scent lingers around as if chorusing, which makes you want to join in.",
+  "item.eidolon_edoni.stimulating_incense": "Stimulating Incense",
+  "lore.eidolon_edoni.stimulating_incense": "It's fueling a thirst for blood... and also brings wild excitement.",
+  "item.eidolon_edoni.gluttony_incense": "Gluttony Incense",
+  "lore.eidolon_edoni.gluttony_incense": "Its scent makes you crave a lot."
 }

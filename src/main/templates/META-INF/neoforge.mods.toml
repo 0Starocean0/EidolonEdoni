@@ -12,6 +12,8 @@ version="${mod_version}"
 
 displayName="${mod_name}"
 
+logoFile = "logo.png"
+
 authors="${mod_authors}"
 
 description='''${mod_description}'''
@@ -36,13 +38,13 @@ config="${mod_id}.mixins.json"
 [[dependencies.${mod_id}]]
     modId="eidolon_repraised"
     type="required"
-    versionRange="[0.5.0.0-pre.13,)"
+    versionRange="[0.5.0.0,)"
     ordering="NONE"
     side="BOTH"
 
 [[dependencies.${mod_id}]]
     modId="farmersdelight"
     type="required"
-    versionRange="[1.2.9),"
+    versionRange="[1.2.9,)"
     ordering="NONE"
     side="BOTH"

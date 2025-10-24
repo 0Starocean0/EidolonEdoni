@@ -2,8 +2,9 @@
   "required": true,
   "package": "cn.nutminds.eidolonedoni.mixin",
   "mixins": [
-    "RichSoilPlanterMixin",
-    "EidolonEventsMixin"
+    "EidolonEventsMixin",
+    "ItemStackMixin",
+    "RichSoilPlanterMixin"
   ],
   "client": [
   ],

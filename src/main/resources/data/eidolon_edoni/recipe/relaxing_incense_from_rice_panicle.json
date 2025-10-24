@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "eidolon_repraised:merammer_resin"
+    },
+    {
+      "item": "eidolon_repraised:oanna_bloom"
+    },
+    {
+      "item": "farmersdelight:rice_panicle"
+    },
+    {
+      "tag": "c:foods/soup"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "eidolon_edoni:relaxing_incense"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "type": "eidolon_repraised:worktable",
+  "pattern": [
+    "p a",
+    "ilg",
+    " k "
+  ],
+  "reagents": [
+    "fheu"
+  ],
+  "key": {
+    "a": {
+      "tag": "c:ingots/arcane_gold"
+    },
+    "e": {
+      "item": "minecraft:ender_pearl"
+    },
+    "f": {
+      "item": "minecraft:flint"
+    },
+    "g": {
+      "item": "eidolon_repraised:gold_inlay"
+    },
+    "h": {
+      "item": "eidolon_repraised:holy_symbol"
+    },
+    "i": {
+      "item": "eidolon_repraised:pewter_inlay"
+    },
+    "k": {
+      "item": "eidolon_repraised:athame"
+    },
+    "l": {
+      "item": "eidolon_repraised:lesser_soul_gem"
+    },
+    "p": {
+      "tag": "c:ingots/pewter"
+    },
+    "u": {
+      "item": "eidolon_repraised:unholy_symbol"
+    }
+  },
+  "result": {
+    "id": "eidolon_edoni:all_rounder"
+  }
+}

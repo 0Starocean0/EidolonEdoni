@@ -25,8 +25,7 @@ public class EEEffects {
                     ResourceLocation.fromNamespaceAndPath(EidolonEdoni.MODID, "faithful"),
                     0.3, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
     public static final Holder<MobEffect> EXCITED = EFFECTS.register("excited",
-            () -> new ExcitedEffect()
-                    .addAttributeModifier(Attributes.MOVEMENT_SPEED,
+            () -> new ExcitedEffect().addAttributeModifier(Attributes.MOVEMENT_SPEED,
                     ResourceLocation.fromNamespaceAndPath(EidolonEdoni.MODID, "excited"),
                     0.15, AttributeModifier.Operation.ADD_MULTIPLIED_BASE)
                     .addAttributeModifier(Attributes.ATTACK_SPEED,
@@ -34,9 +33,12 @@ public class EEEffects {
                     0.25, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
     public static final Holder<MobEffect> CLINGING = EFFECTS.register("clinging", ClingingEffect::new);
     public static final Holder<MobEffect> FETTERED = EFFECTS.register("fettered",
-            () -> new SnatchedEffect().addAttributeModifier(
-                    Attributes.MOVEMENT_SPEED,
+            () -> new SnatchedEffect().addAttributeModifier(Attributes.MOVEMENT_SPEED,
+                    ResourceLocation.fromNamespaceAndPath(EidolonEdoni.MODID, "fettered"),
+                    -1, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL)
+                    .addAttributeModifier(Attributes.FLYING_SPEED,
                     ResourceLocation.fromNamespaceAndPath(EidolonEdoni.MODID, "fettered"),
                     -1, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
+
     public static final Holder<MobEffect> REANIMATE = EFFECTS.register("reanimate", ReanimateEffect::new);
 }

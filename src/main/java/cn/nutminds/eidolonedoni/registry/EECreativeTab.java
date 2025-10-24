@@ -23,6 +23,11 @@ public class EECreativeTab{
                 output.accept(EEItems.ILLWOOD_CABINET.get());
                 output.accept(EEItems.POLISHED_CABINET.get());
                 output.accept(EEItems.SILVER_KNIFE.get());
+                output.accept(EEItems.ALL_ROUNDER.get());
+                output.accept(EEItems.RELAXING_INCENSE.get());
+                output.accept(EEItems.CHORUS_INCENSE.get());
+                output.accept(EEItems.STIMULATING_INCENSE.get());
+                output.accept(EEItems.GLUTTONY_INCENSE.get());
                 output.accept(EEItems.JELLY_SLUG.get());
                 output.accept(EEItems.BECHAMEL.get());
                 output.accept(EEItems.CURRY_POT.get());

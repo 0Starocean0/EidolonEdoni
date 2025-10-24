@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "eidolon_repraised:merammer_resin"
+    },
+    {
+      "item": "minecraft:rotten_flesh"
+    },
+    {
+      "item": "farmersdelight:rotten_tomato"
+    },
+    {
+      "item": "eidolon_repraised:tallow"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "eidolon_edoni:gluttony_incense"
+  }
+}
