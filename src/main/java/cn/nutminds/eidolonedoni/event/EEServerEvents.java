@@ -44,7 +44,7 @@ public class EEServerEvents {
     @SubscribeEvent
     static void onLivingDamageEvent(LivingDamageEvent.Post event) {
         if (event.getSource().getDirectEntity() instanceof final LivingEntity source) {
-            if (source.hasEffect(EEEffects.SOULTAKING)) {
+            if (event.getEntity().hasEffect(EEEffects.SOULTAKING)) {
                 MobEffectInstance instance = event.getEntity().getEffect(EEEffects.SOULTAKING);
                 if (instance != null) {
                     int amplifier = instance.getAmplifier();

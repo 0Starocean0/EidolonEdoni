@@ -4,7 +4,7 @@
 	"texture_size": [32, 32],
 	"textures": {
 		"0": "eidolon_edoni:block/pot_of_curry",
-		"particle": "eidolon_edoni:block/pot_of_curry"
+		"particle": "minecraft:block/iron_block"
 	},
 	"elements": [
 		{

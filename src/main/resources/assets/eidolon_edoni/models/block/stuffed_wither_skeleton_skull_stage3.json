@@ -4,7 +4,7 @@
 	"textures": {
 		"0": "eidolon_edoni:block/stuffed_wither_skeleton_skull",
 		"1": "eidolon_edoni:block/stuffed_wither_skeleton_skull_details",
-		"particle": "eidolon_edoni:block/stuffed_wither_skeleton_skull"
+		"particle": "minecraft:block/soul_sand"
 	},
 	"elements": [
 		{

@@ -4,7 +4,7 @@
   "group": "jockey_pie",
   "key": {
     "C": {
-      "tag": "c:cooked_chicken"
+      "tag": "c:foods/cooked_chicken"
     },
     "M": {
       "item": "eidolon_repraised:mirecap"

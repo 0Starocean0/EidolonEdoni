@@ -85,7 +85,7 @@ public class EEItems {
     public static final Supplier<Item>BECHAMEL = ITEMS.register("bechamel_sauce", () ->
             new ConsumableItem(bowlFoodItem(EEFoodValues.BECHAMEL)));
     public static final DeferredHolder<Item, BlockItem> CURRY_POT = ITEMS.register("pot_of_curry",
-            () -> new BlockItem(EEBlocks.CURRY_POT.get(), new Item.Properties()));
+            () -> new BlockItem(EEBlocks.CURRY_POT.get(), new Item.Properties().stacksTo(1)));
     public static final Supplier<Item>CURRY_BREAD = ITEMS.register("bread_with_curry", () ->
             new MerammerFoodItem(foodItem(EEFoodValues.CURRY_BREAD)));
     public static final Supplier<Item>CURRY_RICE = ITEMS.register("rice_with_curry", () ->
@@ -105,7 +105,7 @@ public class EEItems {
             new DrinkableItem(drinkItem().food(EEFoodValues.OANNA_PETAL_TEA), true));
 
     public static final DeferredHolder<Item, BlockItem> SILDRIAN_PUDDING = ITEMS.register("sildrian_pudding",
-            () -> new BlockItem(EEBlocks.SILDRIAN_PUDDING.get(), new Item.Properties()));
+            () -> new BlockItem(EEBlocks.SILDRIAN_PUDDING.get(), new Item.Properties().stacksTo(1)));
     public static final Supplier<Item>SILDRIAN_BEEF = ITEMS.register("sildrian_beef", () ->
             new ConsumableItem(bowlFoodItem(EEFoodValues.SILDRIAN_BEEF), true));
     public static final Supplier<Item>MIXED_PORRIDGE = ITEMS.register("mixed_porridge", () ->
@@ -125,7 +125,7 @@ public class EEItems {
             new ConsumableItem(foodItem(EEFoodValues.FRIED_AVENNA_DUMPLING), true));
 
     public static final DeferredHolder<Item, BlockItem> STUFFED_WITHER_SKELETON_SKULL = ITEMS.register("stuffed_wither_skeleton_skull",
-            () -> new BlockItem(EEBlocks.STUFFED_WITHER_SKELETON_SKULL.get(), new Item.Properties()));
+            () -> new BlockItem(EEBlocks.STUFFED_WITHER_SKELETON_SKULL.get(), new Item.Properties().stacksTo(1)));
     public static final Supplier<Item>STUFFED_WITHER_SKELETON_SKULL_BOWL = ITEMS.register("stuffed_wither_skeleton_skull_bowl", () ->
             new StuffedWitherSkeletonSkullBowlItem(bowlFoodItem(EEFoodValues.STUFFED_WITHER_SKELETON_SKULL)));
     public static final DeferredHolder<Item, BlockItem> JOCKEY_PIE = ITEMS.register("jockey_pie",
