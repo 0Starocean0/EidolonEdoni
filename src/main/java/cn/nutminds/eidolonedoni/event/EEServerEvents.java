@@ -1,10 +1,6 @@
 package cn.nutminds.eidolonedoni.event;
 
-import alexthw.eidolon_repraised.api.capability.IReputation;
-import alexthw.eidolon_repraised.api.deity.ReputationEvent;
-import alexthw.eidolon_repraised.common.deity.Deities;
-import alexthw.eidolon_repraised.registries.EidolonCapabilities;
-import alexthw.eidolon_repraised.registries.EidolonDataComponents;
+import alexthw.eidolon_repraised.common.entity.WraithEntity;
 import alexthw.eidolon_repraised.registries.EidolonPotions;
 import alexthw.eidolon_repraised.registries.Registry;
 import cn.nutminds.eidolonedoni.EEConfig;
@@ -19,6 +15,7 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.*;
+import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.monster.Enemy;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.player.Inventory;
@@ -31,6 +28,8 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.event.entity.living.*;
 import net.neoforged.neoforge.event.tick.EntityTickEvent;
 import net.neoforged.neoforge.event.tick.PlayerTickEvent;
+
+import java.util.Calendar;
 
 @EventBusSubscriber(modid = EidolonEdoni.MODID)
 public class EEServerEvents {
@@ -122,12 +121,26 @@ public class EEServerEvents {
             }
         }
     }
-
     public static ItemStack createFilledGoblet(Entity entity) {
         ItemStack filledGoblet = new ItemStack(Registry.GOBLET.get().asItem());
         CompoundTag blockEntityData = new CompoundTag();
         blockEntityData.putString("type", EntityType.getKey(entity.getType()).toString());
         BlockItem.setBlockEntityData(filledGoblet, Registry.GOBLET_TILE_ENTITY.get(), blockEntityData);
         return filledGoblet;
+    }
+
+    @SubscribeEvent
+    public static void onDrop(LivingDropsEvent event) {
+        LivingEntity entity = event.getEntity();
+        if (event.getSource().getEntity() instanceof Player && !entity.level().isClientSide()) {
+            Calendar calendar = Calendar.getInstance();
+            int month = calendar.get(Calendar.MONTH) + 1;
+            int day = calendar.get(Calendar.DAY_OF_MONTH);
+            if ((month == 10 && day >= 28 || month == 11 && day <= 2) && entity.level().random.nextInt(10) == 0) {
+                if (entity instanceof WraithEntity) {
+                    event.getDrops().add(new ItemEntity(entity.level(), entity.getX(), entity.getY(), entity.getZ(), new ItemStack(EEItems.CHERRY_CANDY.get())));
+                }
+            }
+        }
     }
 }

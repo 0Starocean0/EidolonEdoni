@@ -123,4 +123,8 @@ public class EEFoodValues {
             .effect(() -> new MobEffectInstance(MobEffects.JUMP, 600, 0), 1.0F)
             .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 600, 0), 0.5F)
             .fast().alwaysEdible().build();
+    public static final FoodProperties CHERRY_CANDY = (new FoodProperties.Builder())
+            .nutrition(2).saturationModifier(2)
+            .effect(() -> new MobEffectInstance(EidolonPotions.SOUL_HARVEST, 1200, 0), 0.5f)
+            .build();
 }

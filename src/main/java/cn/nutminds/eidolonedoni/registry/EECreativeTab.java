@@ -29,6 +29,7 @@ public class EECreativeTab{
                 output.accept(EEItems.STIMULATING_INCENSE.get());
                 output.accept(EEItems.GLUTTONY_INCENSE.get());
                 output.accept(EEItems.JELLY_SLUG.get());
+                output.accept(EEItems.CHERRY_CANDY.get());
                 output.accept(EEItems.BECHAMEL.get());
                 output.accept(EEItems.CURRY_POT.get());
                 output.accept(EEItems.CURRY_BREAD.get());
