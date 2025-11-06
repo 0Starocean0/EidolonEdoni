@@ -59,14 +59,14 @@ public class JockeyPieBlock extends PieBlock {
                 }
             }
 
-            int bites = (Integer)state.getValue(BITES);
+            int bites = state.getValue(BITES);
             if (bites < this.getMaxBites() - 1) {
-                level.setBlock(pos, (BlockState)state.setValue(BITES, bites + 1), 3);
+                level.setBlock(pos, state.setValue(BITES, bites + 1), 3);
             } else {
                 level.removeBlock(pos, false);
             }
 
-            level.playSound((Player)null, pos, SoundEvents.GENERIC_EAT, SoundSource.PLAYERS, 0.8F, 0.8F);
+            level.playSound(null, pos, SoundEvents.GENERIC_EAT, SoundSource.PLAYERS, 0.8F, 0.8F);
             return InteractionResult.SUCCESS;
         }
     }

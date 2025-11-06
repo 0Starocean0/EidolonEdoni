@@ -64,5 +64,9 @@
   "item.eidolon_edoni.gluttony_incense": "贪食熏香",
   "lore.eidolon_edoni.gluttony_incense": "它的气味令你食欲大增。",
   "item.eidolon_edoni.cherry_candy": "灵魂糖果",
-  "lore.eidolon_edoni.cherry_candy": "斩首樱桃味"
+  "lore.eidolon_edoni.cherry_candy": "斩首樱桃味",
+  "item.eidolon_edoni.dark_feed": "黑暗马食",
+  "farmersdelight.tooltip.dark_feed.when_feeding_undead": "喂给已驯服的亡灵坐骑时：",
+  "farmersdelight.tooltip.dark_feed.when_feeding_else": "喂给已驯服的非亡灵坐骑时：",
+  "item.eidolon_edoni.premium_dog_food": "豪华狗粮"
 }

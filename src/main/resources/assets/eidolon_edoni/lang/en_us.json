@@ -64,5 +64,9 @@
   "item.eidolon_edoni.gluttony_incense": "Gluttony Incense",
   "lore.eidolon_edoni.gluttony_incense": "Its scent makes you crave a lot.",
   "item.eidolon_edoni.cherry_candy": "Soul Candy",
-  "lore.eidolon_edoni.cherry_candy": "Cleaving Cherry"
+  "lore.eidolon_edoni.cherry_candy": "Cleaving Cherry",
+  "item.eidolon_edoni.dark_feed": "Dark Feed",
+  "farmersdelight.tooltip.dark_feed.when_feeding_undead": "When fed to a tamed undead mount:",
+  "farmersdelight.tooltip.dark_feed.when_feeding_else": "When fed to a tamed non-undead mount:",
+  "item.eidolon_edoni.premium_dog_food": "Premium Dog Food"
 }

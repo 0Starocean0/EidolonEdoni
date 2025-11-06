@@ -26,6 +26,6 @@ public class ReanimateEffect extends MobEffect {
     @Override
     public boolean shouldApplyEffectTickThisTick(int duration, int amplifier) {
         int i = 50 >> amplifier;
-        return i > 0 ? duration % i == 0 : true;
+        return i <= 0 || duration % i == 0;
     }
 }

@@ -60,6 +60,8 @@ public class EECreativeTab{
                 output.accept(EEItems.HEART_TERRINE_SLICE.get());
                 output.accept(EEItems.COLD_NOODLE.get());
                 output.accept(EEItems.SHAVED_ICE.get());
+                output.accept(EEItems.PREMIUM_DOG_FOOD.get());
+                output.accept(EEItems.DARK_FEED.get());
             })
             .build()
     );

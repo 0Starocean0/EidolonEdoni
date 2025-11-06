@@ -127,4 +127,6 @@ public class EEFoodValues {
             .nutrition(2).saturationModifier(2)
             .effect(() -> new MobEffectInstance(EidolonPotions.SOUL_HARVEST, 1200, 0), 0.5f)
             .build();
+    public static final FoodProperties PREMIUM_DOG_FOOD = (new FoodProperties.Builder())
+            .nutrition(6).saturationModifier(0.2f).build();
 }

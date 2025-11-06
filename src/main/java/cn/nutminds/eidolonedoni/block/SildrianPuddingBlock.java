@@ -3,7 +3,6 @@ package cn.nutminds.eidolonedoni.block;
 import cn.nutminds.eidolonedoni.EEFoodValues;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
@@ -36,7 +35,7 @@ public class SildrianPuddingBlock extends Block {
     public SildrianPuddingBlock(BlockBehaviour.Properties properties, boolean hasLeftovers) {
         super(properties);
         this.hasLeftovers = true;
-        this.registerDefaultState((BlockState) ((BlockState) ((BlockState) this.stateDefinition.any()).setValue(FACING, Direction.NORTH)).setValue(this.getServingsProperty(), this.getMaxServings()));
+        this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(this.getServingsProperty(), this.getMaxServings()));
     }
 
     public IntegerProperty getServingsProperty() {
@@ -69,9 +68,9 @@ public class SildrianPuddingBlock extends Block {
     }
 
     protected InteractionResult consumeBite(Level level, BlockPos pos, BlockState state, Player playerIn) {
-        int servings = (Integer) state.getValue(this.getServingsProperty());
+        int servings = state.getValue(this.getServingsProperty());
         if (servings == 0) {
-            level.playSound((Player) null, pos, SoundEvents.GLASS_HIT, SoundSource.PLAYERS, 0.8F, 0.8F);
+            level.playSound(null, pos, SoundEvents.GLASS_HIT, SoundSource.PLAYERS, 0.8F, 0.8F);
             level.destroyBlock(pos, true);
             return ItemInteractionResult.SUCCESS.result();
         } else {
@@ -83,7 +82,7 @@ public class SildrianPuddingBlock extends Block {
                     if (!level.isClientSide && effect != null && level.random.nextFloat() < effect.probability()) {
                         playerIn.addEffect(effect.effect());
                     }
-                    level.setBlock(pos, (BlockState) state.setValue(this.getServingsProperty(), servings - 1), 3);
+                    level.setBlock(pos, state.setValue(this.getServingsProperty(), servings - 1), 3);
                     level.playSound(null, pos, SoundEvents.GENERIC_EAT, SoundSource.PLAYERS, 0.8F, 0.8F);
                     return InteractionResult.SUCCESS;
                 }
@@ -93,7 +92,7 @@ public class SildrianPuddingBlock extends Block {
     }
 
     public BlockState getStateForPlacement(BlockPlaceContext context) {
-        return (BlockState) this.defaultBlockState().setValue(FACING, context.getHorizontalDirection().getOpposite());
+        return this.defaultBlockState().setValue(FACING, context.getHorizontalDirection().getOpposite());
     }
 
     public BlockState updateShape(BlockState stateIn, Direction facing, BlockState facingState, LevelAccessor
@@ -106,11 +105,11 @@ public class SildrianPuddingBlock extends Block {
     }
 
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-        builder.add(new Property[]{FACING, SERVINGS});
+        builder.add(FACING, SERVINGS);
     }
 
     public int getAnalogOutputSignal(BlockState blockState, Level level, BlockPos pos) {
-        return (Integer) blockState.getValue(this.getServingsProperty());
+        return blockState.getValue(this.getServingsProperty());
     }
 
     public boolean hasAnalogOutputSignal(BlockState state) {

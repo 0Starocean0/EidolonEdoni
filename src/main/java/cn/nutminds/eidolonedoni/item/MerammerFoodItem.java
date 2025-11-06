@@ -66,7 +66,7 @@ public class MerammerFoodItem extends ConsumableItem {
 
     @Override
     public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltip, TooltipFlag isAdvanced) {
-        if ((Boolean) Configuration.FOOD_EFFECT_TOOLTIP.get()) {
+        if (Configuration.FOOD_EFFECT_TOOLTIP.get()) {
             MutableComponent textEmpty = Component.translatable(EidolonEdoni.MODID + ".tooltip.merammer_food", new Object[0]);
             tooltip.add(textEmpty.withStyle(ChatFormatting.BLUE));
             Objects.requireNonNull(tooltip);

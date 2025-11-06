@@ -5,11 +5,7 @@ import alexthw.eidolon_repraised.common.item.Tiers;
 import cn.nutminds.eidolonedoni.EEFoodValues;
 import cn.nutminds.eidolonedoni.EidolonEdoni;
 import cn.nutminds.eidolonedoni.item.*;
-import net.minecraft.ChatFormatting;
-import net.minecraft.client.gui.components.Tooltip;
 import net.minecraft.core.registries.Registries;
-import net.minecraft.network.chat.Component;
-import net.minecraft.network.chat.TextColor;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -143,4 +139,9 @@ public class EEItems {
 
     public static final Supplier<Item>CHERRY_CANDY = ITEMS.register("cherry_candy", () ->
             new CherryCandyItem(foodItem(EEFoodValues.CHERRY_CANDY)));
+
+    public static final Supplier<Item>PREMIUM_DOG_FOOD = ITEMS.register("premium_dog_food", () ->
+            new PremiumDogFoodItem(foodItem(EEFoodValues.PREMIUM_DOG_FOOD).craftRemainder(Items.ARMADILLO_SCUTE).stacksTo(16)));
+    public static final Supplier<Item>DARK_FEED = ITEMS.register("dark_feed", () ->
+            new DarkFeedItem(new Item.Properties().stacksTo(16)));
 }

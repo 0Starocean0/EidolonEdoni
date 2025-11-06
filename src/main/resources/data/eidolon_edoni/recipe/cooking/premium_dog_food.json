@@ -1,0 +1,32 @@
+{
+  "type": "farmersdelight:cooking",
+  "experience": 1.0,
+  "container": {
+    "count": 1,
+    "id": "minecraft:armadillo_scute"
+  },
+  "ingredients": [
+    {
+      "item": "eidolon_repraised:zombie_heart"
+    },
+    {
+      "item": "minecraft:bone"
+    },
+    {
+      "item": "eidolon_repraised:enchanted_ash"
+    },
+    {
+      "tag": "c:foods/raw_meat"
+    },
+    {
+      "item": "eidolon_repraised:tallow"
+    },
+    {
+      "tag": "c:crops/rice"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "eidolon_edoni:premium_dog_food"
+  }
+}
