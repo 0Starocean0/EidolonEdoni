@@ -1,5 +1,6 @@
 package cn.nutminds.eidolonedoni.event;
 
+import alexthw.eidolon_repraised.codex.*;
 import alexthw.eidolon_repraised.common.entity.WraithEntity;
 import alexthw.eidolon_repraised.registries.EidolonPotions;
 import alexthw.eidolon_repraised.registries.Registry;
@@ -10,6 +11,7 @@ import cn.nutminds.eidolonedoni.registry.EEItems;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -27,6 +29,7 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.event.entity.living.*;
 import net.neoforged.neoforge.event.tick.EntityTickEvent;
+import vectorwing.farmersdelight.common.registry.ModItems;
 
 import java.util.Calendar;
 
@@ -72,7 +75,7 @@ public class EEServerEvents {
                 if (player != null && player.hasEffect(EEEffects.FAITHFUL)) {
                     MobEffectInstance instance = player.getEffect(EEEffects.FAITHFUL);
                     double distance = mob.distanceTo(player);
-                    if (instance != null && distance <= (24 + (8 * (instance.getAmplifier() + 1)))) {
+                    if (instance != null && distance <= (24 + (EEConfig.FAITHFUL_DISABLE_MOB_SPAWNING_RANGE.get() * (instance.getAmplifier() + 1)))) {
                         event.setSpawnCancelled(true);
                     }
                 }
@@ -141,5 +144,52 @@ public class EEServerEvents {
                 }
             }
         }
+    }
+
+    @SubscribeEvent
+    public static void onCodexPostInitEvent(CodexEvents.PostInit event) {
+        CodexChapters.RITUALS_INDEX.addPage(new TitledIndexPage(
+                "eidolon_edoni.codex.page.rituals",
+                new IndexPage.IndexEntry(
+                        new CodexBuilder()
+                                .title("eidolon_edoni.codex.chapter.butchery_ritual")
+                                .titledRitualPage("eidolon_edoni.codex.page.butchery_ritual", ResourceLocation.fromNamespaceAndPath(EidolonEdoni.MODID, "ritual/butchery"))
+                                .textPage("eidolon_edoni.codex.page.butchery_ritual")
+                                .build(),
+                        new ItemStack(ModItems.IRON_KNIFE.get()))
+                )
+        );
+        CodexChapters.SPELLS_INDEX.addPage(new TitledIndexPage(
+                "eidolon_edoni.codex.page.spells",
+                new IndexPage.IndexEntry(
+                        new CodexBuilder()
+                                .title("eidolon_edoni.codex.chapter.devour")
+                                .chantPage("eidolon_edoni.codex.page.devour", EidolonEdoni.DEVOUR_SPELL)
+                                .build(),
+                        new ItemStack(ModItems.SMOKED_HAM.get()))
+                )
+        );
+        CodexChapters.ARTIFICE_INDEX.addPage(new TitledIndexPage(
+                "eidolon_edoni.codex.page.artifice",
+                new IndexPage.IndexEntry(
+                        new CodexBuilder()
+                                .title("eidolon_edoni.codex.chapter.all_rounder")
+                                .titlePage("eidolon_edoni.codex.page.all_rounder")
+                                .worktablePage(EEItems.ALL_ROUNDER.get())
+                                .titlePage("eidolon_edoni.codex.page.all_rounder.1")
+                                .build(),
+                        new ItemStack(EEItems.ALL_ROUNDER.get()))
+                )
+        );
+        CodexChapters.CENSER.addPage(new TitlePage("eidolon_edoni.codex.page.censer.incense.0"));
+        CodexChapters.CENSER.addPage(new CraftingPage(EEItems.CHORUS_INCENSE.get()));
+        CodexChapters.CENSER.addPage(new CraftingPage(new ItemStack(EEItems.CHORUS_INCENSE.get(), 4), ResourceLocation.fromNamespaceAndPath(EidolonEdoni.MODID, "chorus_incense_from_calibrated_sculk_sensor")));
+        CodexChapters.CENSER.addPage(new TextPage("eidolon_edoni.codex.page.censer.incense.1"));
+        CodexChapters.CENSER.addPage(new CraftingPage(EEItems.GLUTTONY_INCENSE.get()));
+        CodexChapters.CENSER.addPage(new CraftingPage(EEItems.RELAXING_INCENSE.get()));
+        CodexChapters.CENSER.addPage(new TextPage("eidolon_edoni.codex.page.censer.incense.2"));
+        CodexChapters.CENSER.addPage(new CruciblePage(EEItems.STIMULATING_INCENSE.get()));
+        CodexChapters.PLANTS.addPage(new TitlePage("eidolon_edoni.codex.page.rich_soil_planter"));
+        CodexChapters.PLANTS.addPage(new WorktablePage(EEItems.RICH_SOIL_PLANTER.get()));
     }
 }

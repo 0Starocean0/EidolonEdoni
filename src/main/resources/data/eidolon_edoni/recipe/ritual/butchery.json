@@ -1,0 +1,22 @@
+{
+  "type": "eidolon_repraised:ritual_brazier",
+  "focus_items": [],
+  "health_requirement": 0.0,
+  "invariant_items": [
+    {
+      "tag": "c:tools/knife"
+    }
+  ],
+  "pedestal_items": [
+    {
+      "tag": "c:feathers"
+    },
+    {
+      "tag": "c:feathers"
+    }
+  ],
+  "reagent": {
+    "tag": "c:bones"
+  },
+  "ritual": "eidolon_edoni:butchery"
+}

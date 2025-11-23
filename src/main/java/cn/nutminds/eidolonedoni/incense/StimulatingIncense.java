@@ -2,8 +2,8 @@ package cn.nutminds.eidolonedoni.incense;
 
 import alexthw.eidolon_repraised.api.ritual.IncenseRitual;
 import alexthw.eidolon_repraised.client.particle.Particles;
-import alexthw.eidolon_repraised.common.incense.GenericPotionIncense;
 import alexthw.eidolon_repraised.registries.EidolonParticles;
+import alexthw.eidolon_repraised.registries.EidolonPotions;
 import cn.nutminds.eidolonedoni.registry.EEEffects;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
@@ -13,11 +13,6 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.AABB;
-import vectorwing.farmersdelight.common.registry.ModEffects;
-import vectorwing.farmersdelight.common.registry.ModParticleTypes;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class StimulatingIncense extends IncenseRitual {
     public StimulatingIncense(ResourceLocation registryName) {
@@ -32,7 +27,8 @@ public class StimulatingIncense extends IncenseRitual {
             assert level != null;
             for (LivingEntity entity : level.getEntitiesOfClass(LivingEntity.class, new AABB(pos).inflate(range()))) {
                 entity.addEffect(new MobEffectInstance(EEEffects.EXCITED, 6000, 1));
-                entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 6000, 1));
+                entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 6000, 2));
+                entity.addEffect(new MobEffectInstance(EidolonPotions.VULNERABLE_EFFECT, 6000, 0));
             }
         }
     }

@@ -3,7 +3,6 @@ package cn.nutminds.eidolonedoni.incense;
 import alexthw.eidolon_repraised.client.particle.Particles;
 import alexthw.eidolon_repraised.common.incense.GenericPotionIncense;
 import net.minecraft.core.BlockPos;
-import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.LivingEntity;

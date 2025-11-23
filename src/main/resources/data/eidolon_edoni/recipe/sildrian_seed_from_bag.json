@@ -4,11 +4,11 @@
   "group": "fd_rice",
   "ingredients": [
     {
-      "item": "eidolon_edoni:sildrian_seed"
+      "item": "eidolon_edoni:sildrian_seed_bag"
     }
   ],
   "result": {
     "count": 9,
-    "id": "eidolon_repraised:sildrian_seed_bag"
+    "id": "eidolon_repraised:sildrian_seed"
   }
 }

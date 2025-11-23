@@ -9,9 +9,9 @@
     },
     {
       "items": [
-        { "tag": "c:dusts/redstone" },
-        { "tag": "c:dusts/redstone" },
-        { "tag": "c:dusts/redstone" }
+        { "item": "eidolon_repraised:crimson_essence" },
+        { "item": "eidolon_repraised:crimson_essence" },
+        { "item": "minecraft:poppy" }
       ]
     },
     {

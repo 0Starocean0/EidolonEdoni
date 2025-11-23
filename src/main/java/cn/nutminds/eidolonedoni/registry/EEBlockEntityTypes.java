@@ -4,7 +4,6 @@ import cn.nutminds.eidolonedoni.EidolonEdoni;
 import cn.nutminds.eidolonedoni.block.entity.ElderStoveBlockEntity;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.level.block.entity.BlockEntityType;
-import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.event.BlockEntityTypeAddBlocksEvent;

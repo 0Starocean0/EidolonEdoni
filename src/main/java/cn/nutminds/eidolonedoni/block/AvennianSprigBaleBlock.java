@@ -14,7 +14,6 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
-import net.minecraft.world.ticks.ScheduledTick;
 import vectorwing.farmersdelight.common.tag.ModTags;
 
 @SuppressWarnings("deprecation")
@@ -32,10 +31,6 @@ public class AvennianSprigBaleBlock extends Block
         BlockState belowState = level.getBlockState(pos.below());
         if (belowState.is(ModTags.HEAT_SOURCES) || belowState.is(ModTags.HEAT_CONDUCTORS));
         level.scheduleTick(pos, this, 600);
-    }
-
-    public void tick(ServerLevel level, BlockPos pos, ScheduledTick scheduledTick) {
-        
     }
 
     @Override

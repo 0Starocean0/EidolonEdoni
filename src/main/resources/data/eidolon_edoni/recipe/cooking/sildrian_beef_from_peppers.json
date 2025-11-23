@@ -1,8 +1,11 @@
 {
   "neoforge:conditions": [
     {
-      "type": "neoforge:tag_empty",
-      "tag": "c:fruits/pepper"
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:crops/pepper"
+      }
     }
   ],
   "type": "farmersdelight:cooking",
@@ -12,7 +15,7 @@
       "item": "eidolon_repraised:sildrian_seed"
     },
     {
-      "tag": "c:crops/onion"
+      "tag": "c:crops/pepper"
     },
     {
       "tag": "c:foods/raw_beef"

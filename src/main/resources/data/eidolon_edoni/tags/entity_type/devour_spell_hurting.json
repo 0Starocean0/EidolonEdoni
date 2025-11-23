@@ -1,0 +1,9 @@
+{
+  "values": [
+    "minecraft:iron_golem",
+    "minecraft:turtle",
+    "minecraft:shulker",
+    "#minecraft:skeletons",
+    "#eidolon_edoni:devour_spell_hot"
+  ]
+}

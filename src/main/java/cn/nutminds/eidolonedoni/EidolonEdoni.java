@@ -1,9 +1,16 @@
 package cn.nutminds.eidolonedoni;
 
+import alexthw.eidolon_repraised.api.ritual.Ritual;
+import alexthw.eidolon_repraised.api.spells.Spell;
 import alexthw.eidolon_repraised.registries.IncenseRegistry;
+import alexthw.eidolon_repraised.registries.RitualRegistry;
+import alexthw.eidolon_repraised.registries.Signs;
+import alexthw.eidolon_repraised.registries.Spells;
 import cn.nutminds.eidolonedoni.incense.*;
-import cn.nutminds.eidolonedoni.item.AllRounderItem;
+import cn.nutminds.eidolonedoni.item.*;
 import cn.nutminds.eidolonedoni.registry.*;
+import cn.nutminds.eidolonedoni.ritual.*;
+import cn.nutminds.eidolonedoni.spell.DevourSpell;
 import net.minecraft.resources.ResourceLocation;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.config.ModConfig;
@@ -34,6 +41,11 @@ public class EidolonEdoni {
     public static final ResourceLocation CHORUS_INCENSE = ResourceLocation.fromNamespaceAndPath(EidolonEdoni.MODID,"chorus_incense");
     public static final ResourceLocation STIMULATING_INCENSE = ResourceLocation.fromNamespaceAndPath(EidolonEdoni.MODID,"stimulating_incense");
     public static final ResourceLocation GLUTTONY_INCENSE = ResourceLocation.fromNamespaceAndPath(EidolonEdoni.MODID,"gluttony_incense");
+    public static final ResourceLocation BUTCHERY = ResourceLocation.fromNamespaceAndPath(EidolonEdoni.MODID,"butchery");
+    public static final ResourceLocation DEVOUR = ResourceLocation.fromNamespaceAndPath(EidolonEdoni.MODID,"devour");
+
+    public static Ritual BUTCHERY_RITUAL;
+    public static Spell DEVOUR_SPELL;
 
     public void setup(final FMLCommonSetupEvent event) {
         event.enqueueWork(() -> {
@@ -42,6 +54,8 @@ public class EidolonEdoni {
             IncenseRegistry.register(EEItems.CHORUS_INCENSE.get(), CHORUS_INCENSE, () -> new ChorusIncense(CHORUS_INCENSE));
             IncenseRegistry.register(EEItems.STIMULATING_INCENSE.get(), STIMULATING_INCENSE, () -> new StimulatingIncense(STIMULATING_INCENSE));
             IncenseRegistry.register(EEItems.GLUTTONY_INCENSE.get(), GLUTTONY_INCENSE, () -> new GluttonyIncense(GLUTTONY_INCENSE));
+            BUTCHERY_RITUAL = RitualRegistry.register(BUTCHERY, new ButcheryRitual());
+            DEVOUR_SPELL = Spells.register(new DevourSpell(DEVOUR, Signs.BLOOD_SIGN, Signs.FLAME_SIGN, Signs.DEATH_SIGN, Signs.FLAME_SIGN, Signs.BLOOD_SIGN));
         });
     }
 

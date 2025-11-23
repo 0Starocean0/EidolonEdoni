@@ -1,14 +1,6 @@
 package cn.nutminds.eidolonedoni;
 
-import com.electronwill.nightconfig.core.CommentedConfig;
-import com.electronwill.nightconfig.core.UnmodifiableCommentedConfig;
-import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.resources.ResourceLocation;
-import net.neoforged.fml.config.IConfigSpec;
-import net.neoforged.fml.config.ModConfig;
 import net.neoforged.neoforge.common.ModConfigSpec;
-import org.apache.commons.lang3.tuple.Pair;
-import org.jetbrains.annotations.Nullable;
 
 public class EEConfig {
 
@@ -29,6 +21,9 @@ public class EEConfig {
     public static final ModConfigSpec.IntValue FAITHFUL_DISABLE_MOB_SPAWNING_RANGE = BUILDER
             .comment("Base range to disable mob spawning added by Faithful. Adds to the default 24 blocks.")
             .defineInRange("faithfulDisableMobSpawningRange", 8, Integer.MIN_VALUE, Integer.MAX_VALUE);
+    public static final ModConfigSpec.IntValue DEVOUR_BASE_DAMAGE = BUILDER
+            .comment("Base damage of devour spell.")
+            .defineInRange("devourDamageBase", 20, Integer.MIN_VALUE, Integer.MAX_VALUE);
 
     static final ModConfigSpec SPEC = BUILDER.build();
 }

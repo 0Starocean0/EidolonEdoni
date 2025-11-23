@@ -1,0 +1,21 @@
+{
+  "type": "eidolon_repraised:chant",
+  "id": "eidolon_edoni:devour",
+  "signs": [
+    {
+      "sign": "eidolon_repraised:blood"
+    },
+    {
+      "sign": "eidolon_repraised:flame"
+    },
+    {
+      "sign": "eidolon_repraised:death"
+    },
+    {
+      "sign": "eidolon_repraised:flame"
+    },
+    {
+      "sign": "eidolon_repraised:blood"
+    }
+  ]
+}

@@ -2,22 +2,17 @@ package cn.nutminds.eidolonedoni.incense;
 
 import alexthw.eidolon_repraised.api.ritual.IncenseRitual;
 import alexthw.eidolon_repraised.client.particle.Particles;
-import alexthw.eidolon_repraised.common.incense.GenericPotionIncense;
-import alexthw.eidolon_repraised.common.tile.CenserTileEntity;
 import cn.nutminds.eidolonedoni.EidolonEdoni;
-import cn.nutminds.eidolonedoni.registry.EEEffects;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.effect.MobEffect;
-import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.AABB;
-import org.jetbrains.annotations.Nullable;
 
 public class GluttonyIncense extends IncenseRitual {
     public GluttonyIncense(ResourceLocation registryName) {
