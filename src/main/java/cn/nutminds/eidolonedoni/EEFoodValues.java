@@ -74,8 +74,8 @@ public class EEFoodValues {
             .effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 600, 0), 1.0F)
             .effect(() -> new MobEffectInstance(MobEffects.UNLUCK, 3600, 0), 1.0F)
             .alwaysEdible().build();
-    public static final FoodProperties ROASTED_AVENNIAN_SPRIG = (new FoodProperties.Builder())
-            .nutrition(5).saturationModifier(0.6F)
+    public static final FoodProperties GRLLED_AVENNIAN_SPRIG = (new FoodProperties.Builder())
+            .nutrition(7).saturationModifier(0.5F)
             .effect(() -> new MobEffectInstance(EEEffects.CLINGING, 1200, 0), 1.0F)
             .build();
     public static final FoodProperties AVENNIAN_SCRAMBLED_EGG = (new FoodProperties.Builder())
@@ -129,4 +129,8 @@ public class EEFoodValues {
             .build();
     public static final FoodProperties PREMIUM_DOG_FOOD = (new FoodProperties.Builder())
             .nutrition(6).saturationModifier(0.2f).build();
+    public static final FoodProperties SPROUT_SKEWER = (new FoodProperties.Builder())
+            .nutrition(6).saturationModifier(0.6F)
+            .effect(() -> new MobEffectInstance(EidolonPotions.ANCHORED_EFFECT, 1200, 0), 1.0F)
+            .build();
 }

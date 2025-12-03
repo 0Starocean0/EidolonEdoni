@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "eidolon_edoni:roasted_avennian_sprig_bale"
+          "name": "eidolon_edoni:grilled_avennian_sprig_bale"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "eidolon_edoni:blocks/roasted_avennian_sprig_bale"
+  "random_sequence": "eidolon_edoni:blocks/grilled_avennian_sprig_bale"
 }

@@ -123,6 +123,11 @@ configurations {
 dependencies {
     implementation "curse.maven:farmers-delight-398521:6917256"
     implementation ("com.alexthw.eidolon_repraised:eidolon_repraised-1.21.1:0.5.0.0-pre4.20") {transitive=false}
+
+    compileOnly ("curse.maven:barbeques-delight-1007788:6849166")
+
+    //Integration test
+    //runtimeOnly ("curse.maven:barbeques-delight-1007788:6849166")
 }
 
 var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {

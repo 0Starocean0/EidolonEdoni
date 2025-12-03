@@ -55,8 +55,8 @@ public class EEBlocks {
     public static final DeferredBlock<Block> SILDRIAN_PUDDING = BLOCKS.register("sildrian_pudding",
             () -> new SildrianPuddingBlock(Block.Properties.ofFullCopy(Blocks.CAKE).sound(SoundType.GLASS), true));
 
-    public static final DeferredBlock<Block> ROASTED_AVENNIAN_SPRIG_BALE = BLOCKS.register("roasted_avennian_sprig_bale",
-            () -> new RoastedAvennianSprigBaleBlock(Block.Properties.ofFullCopy(Blocks.HAY_BLOCK)));
+    public static final DeferredBlock<Block> GRILLED_AVENNIAN_SPRIG_BALE = BLOCKS.register("grilled_avennian_sprig_bale",
+            () -> new GrilledAvennianSprigBaleBlock(Block.Properties.ofFullCopy(Blocks.HAY_BLOCK)));
 
     public static final DeferredBlock<Block> STUFFED_WITHER_SKELETON_SKULL = BLOCKS.register("stuffed_wither_skeleton_skull",
             () -> new StuffedWitherSkeletonSkullBlock(Block.Properties.ofFullCopy(Blocks.WITHER_SKELETON_SKULL), EEItems.STUFFED_WITHER_SKELETON_SKULL_BOWL, true));

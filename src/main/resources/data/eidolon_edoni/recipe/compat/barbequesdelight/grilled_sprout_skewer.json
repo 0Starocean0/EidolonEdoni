@@ -1,0 +1,17 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "barbequesdelight"
+    }
+  ],
+  "type": "barbequesdelight:grilling",
+  "barbecuingTime": 320,
+  "ingredient": {
+    "item": "eidolon_edoni:raw_sprout_skewer"
+  },
+  "output": {
+    "count": 1,
+    "id": "eidolon_edoni:grilled_sprout_skewer"
+  }
+}

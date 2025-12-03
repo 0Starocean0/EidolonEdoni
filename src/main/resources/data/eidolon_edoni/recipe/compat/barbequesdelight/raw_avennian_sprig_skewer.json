@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "barbequesdelight"
+    }
+  ],
+  "type": "barbequesdelight:skewering",
+  "ingredient": {
+    "item": "eidolon_edoni:avennian_sprig_bale"
+  },
+  "ingredientCount": 1,
+  "side": {
+    "item": "minecraft:stick"
+  },
+  "sideCount": 3,
+  "output": {
+    "count": 4,
+    "id": "eidolon_edoni:raw_avennian_sprig_skewer"
+  },
+  "tool": {
+    "item": "minecraft:stick"
+  }
+}

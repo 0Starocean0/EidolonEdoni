@@ -1,10 +1,12 @@
 package cn.nutminds.eidolonedoni.registry;
 
 import cn.nutminds.eidolonedoni.EidolonEdoni;
+import cn.nutminds.eidolonedoni.compat.barbequesdelight.BBQDelightIntegration;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
+import net.neoforged.fml.ModList;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.function.Supplier;
@@ -30,6 +32,10 @@ public class EECreativeTab{
                 output.accept(EEItems.GLUTTONY_INCENSE.get());
                 output.accept(EEItems.JELLY_SLUG.get());
                 output.accept(EEItems.CHERRY_CANDY.get());
+                if (ModList.get().isLoaded("barbequesdelight")) {
+                    output.accept(BBQDelightIntegration.RAW_SPROUT_SKEWER.get());
+                    output.accept(BBQDelightIntegration.GRILLED_SPROUT_SKEWER.get());
+                }
                 output.accept(EEItems.BECHAMEL.get());
                 output.accept(EEItems.CURRY_POT.get());
                 output.accept(EEItems.CURRY_BREAD.get());
@@ -44,8 +50,14 @@ public class EECreativeTab{
                 output.accept(EEItems.SILDRIAN_BEEF.get());
                 output.accept(EEItems.MIXED_PORRIDGE.get());
                 output.accept(EEItems.SILDRIAN_TEA.get());
-                output.accept(EEItems.ROASTED_AVENNIAN_SPRIG_BALE.get());
-                output.accept(EEItems.ROASTED_AVENNIAN_SPRIG.get());
+                if (!ModList.get().isLoaded("barbequesdelight")) {
+                    output.accept(EEItems.GRLLED_AVENNIAN_SPRIG_BALE.get());
+                    output.accept(EEItems.GRILLED_AVENNIAN_SPRIG.get());
+                } else {
+                    output.accept(BBQDelightIntegration.RAW_AVENNIAN_SPRIG_SKEWER.get());
+                    output.accept(BBQDelightIntegration.GRILLED_AVENNIAN_SPRIG_SKEWER.get());
+                    output.accept(EEItems.GRLLED_AVENNIAN_SPRIG_BALE.get());
+                }
                 output.accept(EEItems.AVENNIAN_SCRAMBLED_EGG.get());
                 output.accept(EEItems.AVENNIAN_STEW.get());
                 output.accept(EEItems.FRIED_AVENNA_DUMPLING.get());

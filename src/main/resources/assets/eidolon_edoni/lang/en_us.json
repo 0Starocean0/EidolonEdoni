@@ -32,9 +32,9 @@
   "item.eidolon_edoni.mixed_porridge": "Mixed Porridge",
   "item.eidolon_edoni.sildrian_tea": "Sildrian Tea",
   "effect.eidolon_edoni.excited": "Excited",
-  "block.eidolon_edoni.roasted_avennian_sprig_bale": "Roasted Sprig of Avenna Bale",
-  "eidolon_edoni.block.roasted_avennian_sprig_bale.use_container": "You need a Stick to eat this.",
-  "item.eidolon_edoni.roasted_avennian_sprig": "Roasted Sprig of Avenna on a Stick",
+  "block.eidolon_edoni.grilled_avennian_sprig_bale": "Grilled Sprig of Avenna Bale",
+  "eidolon_edoni.block.grilled_avennian_sprig_bale.use_container": "You need a Stick to eat this.",
+  "item.eidolon_edoni.grilled_avennian_sprig": "Grilled Sprig of Avenna on a Stick",
   "item.eidolon_edoni.avennian_scrambled_egg": "Avennian Scrambled Egg",
   "item.eidolon_edoni.avennian_stew": "Avenna Stew",
   "item.eidolon_edoni.fried_avenna_dumpling": "Fried Avenna Dumpling",
@@ -89,5 +89,10 @@
   "eidolon_edoni.codex.page.censer.incense.1": "Merammer resin also reacts to the smell of certain things and changes them. Scent of rotting foods makes your appetite surge, while aroma of hot soup makes you feel peace and comfort.",
   "eidolon_edoni.codex.page.censer.incense.2": "While improving bloodlust incense by concentrating it, as it becomes stronger, it'll also make you more vulnerable.",
   "eidolon_edoni.codex.page.rich_soil_planter.title": "Advanced Planter (Edoni)",
-  "eidolon_edoni.codex.page.rich_soil_planter": "You can make a rich soil planter with rich soil and arcane gold. This provides higher growing speed and a better looking!"
+  "eidolon_edoni.codex.page.rich_soil_planter": "You can make a rich soil planter with rich soil and arcane gold. This provides higher growing speed and a better looking!",
+
+  "item.eidolon_edoni.raw_avennian_sprig_skewer": "Raw Sprig of Avenna Skewer",
+  "item.eidolon_edoni.grilled_avennian_sprig_skewer": "Grilled Sprig of Avenna Skewer",
+  "item.eidolon_edoni.raw_sprout_skewer": "Raw Sprouts Skewer",
+  "item.eidolon_edoni.grilled_sprout_skewer": "Grilled Sprouts Skewer"
 }

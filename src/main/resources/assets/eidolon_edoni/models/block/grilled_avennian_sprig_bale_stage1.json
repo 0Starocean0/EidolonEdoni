@@ -2,9 +2,9 @@
 	"format_version": "1.9.0",
 	"credit": "Made with Blockbench",
 	"textures": {
-		"side": "eidolon_edoni:block/roasted_avennian_sprig_bale_side",
-		"particle": "eidolon_edoni:block/roasted_avennian_sprig_bale_bottom",
-		"bottom": "eidolon_edoni:block/roasted_avennian_sprig_bale_bottom"
+		"side": "eidolon_edoni:block/grilled_avennian_sprig_bale_side",
+		"particle": "eidolon_edoni:block/grilled_avennian_sprig_bale_bottom",
+		"bottom": "eidolon_edoni:block/grilled_avennian_sprig_bale_bottom"
 	},
 	"elements": [
 		{

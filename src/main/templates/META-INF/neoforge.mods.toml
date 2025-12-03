@@ -48,3 +48,10 @@ config="${mod_id}.mixins.json"
     versionRange="[1.2.9,)"
     ordering="AFTER"
     side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="barbequesdelight"
+    type="optional"
+    versionRange="[1.2.2,)"
+    ordering="AFTER"
+    side="BOTH"

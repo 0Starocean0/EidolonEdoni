@@ -21,6 +21,10 @@
     "eidolon_edoni:mirechoco",
     "eidolon_edoni:mixed_porridge",
     "eidolon_edoni:sildrian_beef",
-    "eidolon_edoni:stuffed_wither_skeleton_skull_bowl"
+    "eidolon_edoni:stuffed_wither_skeleton_skull_bowl",
+    {
+      "id": "eidolon_edoni:grilled_avennian_sprig",
+      "required": "false"
+    }
   ]
 }

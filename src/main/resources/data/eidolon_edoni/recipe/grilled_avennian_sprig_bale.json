@@ -1,13 +1,13 @@
 {
-  "type": "minecraft:campfire_cooking",
+  "type": "minecraft:smelting",
   "category": "food",
-  "cookingtime": 600,
+  "cookingtime": 200,
   "experience": 0.35,
   "ingredient": {
     "item": "eidolon_edoni:avennian_sprig_bale"
   },
   "result": {
     "count": 1,
-    "id": "eidolon_edoni:roasted_avennian_sprig_bale"
+    "id": "eidolon_edoni:grilled_avennian_sprig_bale"
   }
 }

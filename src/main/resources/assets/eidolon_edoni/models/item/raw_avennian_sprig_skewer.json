@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "eidolon_edoni:item/raw_avennian_sprig_skewer"
+  }
+}

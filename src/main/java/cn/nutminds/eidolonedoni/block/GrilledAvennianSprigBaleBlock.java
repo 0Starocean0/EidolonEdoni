@@ -25,7 +25,7 @@ import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import vectorwing.farmersdelight.common.utility.ItemUtils;
 
-public class RoastedAvennianSprigBaleBlock extends AvennianSprigBaleBlock{
+public class GrilledAvennianSprigBaleBlock extends AvennianSprigBaleBlock{
 
     public static final IntegerProperty STAGE = IntegerProperty.create("stage", 0, 3);
 
@@ -75,14 +75,14 @@ public class RoastedAvennianSprigBaleBlock extends AvennianSprigBaleBlock{
         return Shapes.block();
     }
 
-    public RoastedAvennianSprigBaleBlock(Properties properties) {
+    public GrilledAvennianSprigBaleBlock(Properties properties) {
         super(properties);
     }
 
     public ItemInteractionResult useItemOn(ItemStack heldStack, BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit) {
         if (heldStack.is(Items.STICK)) {
             return takeServing(level, pos, state, player);
-        } else player.displayClientMessage(Component.translatable(EidolonEdoni.MODID + ".block.roasted_avennian_sprig_bale.use_container"), true);
+        } else player.displayClientMessage(Component.translatable(EidolonEdoni.MODID + ".block.grilled_avennian_sprig_bale.use_container"), true);
 
         return
                 ItemInteractionResult.PASS_TO_DEFAULT_BLOCK_INTERACTION;
@@ -97,7 +97,7 @@ public class RoastedAvennianSprigBaleBlock extends AvennianSprigBaleBlock{
         }
 
         Direction direction = player.getDirection().getOpposite();
-        ItemUtils.spawnItemEntity(level, new ItemStack(EEItems.ROASTED_AVENNIAN_SPRIG.get()), pos.getX() + 0.5, pos.getY() + 0.3, pos.getZ() + 0.5,
+        ItemUtils.spawnItemEntity(level, new ItemStack(EEItems.GRILLED_AVENNIAN_SPRIG.get()), pos.getX() + 0.5, pos.getY() + 0.3, pos.getZ() + 0.5,
                 direction.getStepX() * 0.15, 0.05, direction.getStepZ() * 0.15);
         level.playSound(null, pos, SoundEvents.GRASS_BREAK, SoundSource.PLAYERS, 0.8F, 0.8F);
         return ItemInteractionResult.SUCCESS;

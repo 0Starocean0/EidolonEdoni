@@ -11,6 +11,7 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.Rarity;
+import net.neoforged.fml.ModList;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import vectorwing.farmersdelight.common.item.ConsumableItem;
@@ -113,16 +114,21 @@ public class EEItems {
     public static final Supplier<Item>SILDRIAN_TEA = ITEMS.register("sildrian_tea", () ->
             new DrinkableItem(drinkItem().food(EEFoodValues.SILDRIAN_TEA), true));
 
-    public static final DeferredHolder<Item, BlockItem> ROASTED_AVENNIAN_SPRIG_BALE = ITEMS.register("roasted_avennian_sprig_bale",
-            () -> new BlockItem(EEBlocks.ROASTED_AVENNIAN_SPRIG_BALE.get(), new Item.Properties()));
-    public static final Supplier<Item>ROASTED_AVENNIAN_SPRIG = ITEMS.register("roasted_avennian_sprig", () ->
-            new ConsumableItem(foodItem(EEFoodValues.ROASTED_AVENNIAN_SPRIG), true));
+    public static final DeferredHolder<Item, BlockItem> GRLLED_AVENNIAN_SPRIG_BALE = ITEMS.register("grilled_avennian_sprig_bale",
+            () -> new BlockItem(EEBlocks.GRILLED_AVENNIAN_SPRIG_BALE.get(), new Item.Properties()));
+    public static Supplier<Item> GRILLED_AVENNIAN_SPRIG = ITEMS.register("grilled_avennian_sprig", () ->
+            new ConsumableItem(foodItem(EEFoodValues.GRLLED_AVENNIAN_SPRIG), true));
     public static final Supplier<Item>AVENNIAN_SCRAMBLED_EGG = ITEMS.register("avennian_scrambled_egg", () ->
             new ConsumableItem(bowlFoodItem(EEFoodValues.AVENNIAN_SCRAMBLED_EGG), true));
     public static final Supplier<Item>AVENNIAN_STEW = ITEMS.register("avennian_stew", () ->
             new ConsumableItem(bowlFoodItem(EEFoodValues.AVENNIAN_STEW), true));
     public static final Supplier<Item>FRIED_AVENNA_DUMPLING = ITEMS.register("fried_avenna_dumpling", () ->
             new ConsumableItem(foodItem(EEFoodValues.FRIED_AVENNA_DUMPLING), true));
+    {
+        if (ModList.get().isLoaded("barbequesdelight")) {
+            GRILLED_AVENNIAN_SPRIG = null;
+        }
+    }
 
     public static final DeferredHolder<Item, BlockItem> STUFFED_WITHER_SKELETON_SKULL = ITEMS.register("stuffed_wither_skeleton_skull",
             () -> new BlockItem(EEBlocks.STUFFED_WITHER_SKELETON_SKULL.get(), new Item.Properties().stacksTo(1)));
