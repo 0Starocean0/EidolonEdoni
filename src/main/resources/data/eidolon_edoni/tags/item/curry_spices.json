@@ -1,6 +1,23 @@
 {
   "values": [
     "minecraft:nether_wart",
-    "eidolon_repraised:sildrian_seed"
+    "eidolon_repraised:fungus_sprouts",
+    "farmersdelight:onion",
+    {
+      "id": "#c:crops/spices",
+      "required": false
+    },
+    {
+      "id": "#c:crops/turmeric",
+      "required": false
+    },
+    {
+      "id": "#c:crops/pepper",
+      "required": false
+    },
+    {
+      "id": "#c:crops/chili_pepper",
+      "required": false
+    }
   ]
 }

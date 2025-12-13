@@ -1,0 +1,22 @@
+{
+  "values": [
+    "minecraft:cactus",
+    "eidolon_repraised:warped_sprouts",
+    {
+      "id": "#c:crops/green_pepper",
+      "required": false
+    },
+    {
+      "id": "rusticdelight:bell_pepper_green",
+      "required": false
+    },
+    {
+      "id": "rusticdelight:bell_pepper_slice_green",
+      "required": false
+    },
+    {
+      "id": "#c:crops/lemongrass",
+      "required": false
+    }
+  ]
+}

@@ -55,3 +55,38 @@ config="${mod_id}.mixins.json"
     versionRange="[1.2.2,)"
     ordering="AFTER"
     side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="culturaldelights"
+    type="optional"
+    versionRange="[0.17.7,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="cookscollection"
+    type="optional"
+    versionRange="[0.5.4,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="mynethersdelight"
+    type="optional"
+    versionRange="[1.9,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="rusticdelight"
+    type="optional"
+    versionRange="[1.5.1,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="vampiresdelight"
+    type="optional"
+    versionRange="[0.1.11,)"
+    ordering="AFTER"
+    side="BOTH"

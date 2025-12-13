@@ -1,0 +1,32 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "crabbersdelight"
+    }
+  ],
+  "type": "farmersdelight:cooking",
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "eidolon_edoni:curry_chunk"
+    },
+    {
+      "tag": "eidolon_edoni:seafood_curry_spices"
+    },
+    {
+      "tag": "crabbersdelight:raw_seafood"
+    },
+    {
+      "tag": "crabbersdelight:raw_seafood"
+    },
+    {
+      "tag": "c:foods/vegetable"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "count": 1,
+    "id": "eidolon_edoni:seafood_curry"
+  }
+}

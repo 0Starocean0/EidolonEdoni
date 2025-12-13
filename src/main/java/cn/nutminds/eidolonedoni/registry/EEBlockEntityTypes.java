@@ -1,6 +1,7 @@
 package cn.nutminds.eidolonedoni.registry;
 
 import cn.nutminds.eidolonedoni.EidolonEdoni;
+import cn.nutminds.eidolonedoni.block.entity.AvennianSprigBaleBlockEntity;
 import cn.nutminds.eidolonedoni.block.entity.ElderStoveBlockEntity;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.level.block.entity.BlockEntityType;
@@ -18,6 +19,8 @@ public class EEBlockEntityTypes {
 
     public static final Supplier<BlockEntityType<ElderStoveBlockEntity>> STOVE = BLOCK_ENTITIES.register("stove",
             () -> BlockEntityType.Builder.of(ElderStoveBlockEntity::new, EEBlocks.ELDER_STOVE.get()).build(null));
+    public static final Supplier<BlockEntityType<AvennianSprigBaleBlockEntity>> AVENNIAN_SPRIG_BALE = BLOCK_ENTITIES.register("avennian_sprig_bale",
+            () -> BlockEntityType.Builder.of(AvennianSprigBaleBlockEntity::new, EEBlocks.AVENNIAN_SPRIG_BALE.get()).build(null));
 
 
     @SubscribeEvent

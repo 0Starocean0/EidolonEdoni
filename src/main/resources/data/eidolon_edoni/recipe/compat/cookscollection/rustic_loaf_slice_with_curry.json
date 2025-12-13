@@ -1,0 +1,16 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "cookscollection"
+    }
+  ],
+  "type": "eidolon_edoni:curry_pot",
+  "ingredient": {
+    "item": "cookscollection:rustic_loaf_slice"
+  },
+  "result": {
+    "id": "eidolon_edoni:rustic_loaf_slice_with_curry",
+    "count": 1
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mynethersdelight"
+    }
+  ],
+  "type": "eidolon_edoni:curry_pot",
+  "ingredient": {
+    "item": "mynethersdelight:toasts"
+  },
+  "result": {
+    "id": "eidolon_edoni:toasts_with_curry",
+    "count": 1
+  }
+}

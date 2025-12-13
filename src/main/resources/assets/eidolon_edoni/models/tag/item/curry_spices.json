@@ -1,0 +1,7 @@
+{
+  "parent": "emi:item/half_item",
+  "textures": {
+    "first": "minecraft:item/nether_wart",
+    "second": "eidolon_edoni:item/pot_of_curry"
+  }
+}

@@ -6,20 +6,20 @@ import alexthw.eidolon_repraised.registries.IncenseRegistry;
 import alexthw.eidolon_repraised.registries.RitualRegistry;
 import alexthw.eidolon_repraised.registries.Signs;
 import alexthw.eidolon_repraised.registries.Spells;
+import cn.nutminds.eidolonedoni.compat.vampiresdelight.VampiresDelightIntegration;
 import cn.nutminds.eidolonedoni.incense.*;
 import cn.nutminds.eidolonedoni.compat.barbequesdelight.BBQDelightIntegration;
 import cn.nutminds.eidolonedoni.item.*;
 import cn.nutminds.eidolonedoni.registry.*;
 import cn.nutminds.eidolonedoni.ritual.*;
 import cn.nutminds.eidolonedoni.spell.DevourSpell;
+import com.mojang.logging.LogUtils;
 import net.minecraft.resources.ResourceLocation;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.ModList;
 import net.neoforged.fml.config.ModConfig;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import org.slf4j.Logger;
-
-import com.mojang.logging.LogUtils;
 
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
@@ -36,10 +36,15 @@ public class EidolonEdoni {
         EEBlockEntityTypes.BLOCK_ENTITIES.register(modBus);
         EECreativeTab.CREATIVE_MODE_TAB.register(modBus);
         EEEffects.EFFECTS.register(modBus);
+        EERecipeTypes.RECIPE_TYPES.register(modBus);
+        EERecipeTypes.RECIPE_SERIALIZERS.register(modBus);
         container.registerConfig(ModConfig.Type.COMMON, EEConfig.SPEC);
 
         if (ModList.get().isLoaded("barbequesdelight")) {
             BBQDelightIntegration.ITEMS.register(modBus);
+        }
+        if (ModList.get().isLoaded("vampiresdelight")) {
+            VampiresDelightIntegration.ITEMS.register(modBus);
         }
     }
 

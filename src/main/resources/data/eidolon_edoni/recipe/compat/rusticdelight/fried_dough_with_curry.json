@@ -1,0 +1,16 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "rusticdelight"
+    }
+  ],
+  "type": "eidolon_edoni:curry_pot",
+  "ingredient": {
+    "item": "rusticdelight:fried_dough"
+  },
+  "result": {
+    "id": "eidolon_edoni:fried_dough_with_curry",
+    "count": 1
+  }
+}

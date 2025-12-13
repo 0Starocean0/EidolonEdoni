@@ -7,7 +7,7 @@ public class EEConfig {
     private static final ModConfigSpec.Builder BUILDER = new ModConfigSpec.Builder();
 
     public static final ModConfigSpec.IntValue MERAMMER_FOOD_DURATION_RATE = BUILDER
-            .comment("controls the reduction ratio of food effect duration. A larger value results in a shorter duration (effect duration is divided by this value)")
+            .comment("Controls the reduction ratio of food effect duration. A larger value results in a shorter duration (effect duration is divided by this value)")
             .defineInRange("merammerFoodDurationRate", 3, 2, 20);
     public static final ModConfigSpec.IntValue SOULTAKING_WEAKNESS_DURATION_BASE = BUILDER
             .comment("Base duration of Weakness applied by Soultaking.")

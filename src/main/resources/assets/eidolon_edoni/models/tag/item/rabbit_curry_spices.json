@@ -1,0 +1,7 @@
+{
+  "parent": "emi:item/half_item",
+  "textures": {
+    "first": "eidolon_edoni:item/sprouting_fungus",
+    "second": "eidolon_edoni:item/rabbit_curry"
+  }
+}

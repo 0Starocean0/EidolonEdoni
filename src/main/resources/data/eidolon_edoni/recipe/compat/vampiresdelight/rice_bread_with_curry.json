@@ -1,0 +1,16 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "vampiresdelight"
+    }
+  ],
+  "type": "eidolon_edoni:curry_pot",
+  "ingredient": {
+    "item": "vampiresdelight:rice_bread"
+  },
+  "result": {
+    "id": "eidolon_edoni:rice_bread_with_curry",
+    "count": 1
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "eidolon_edoni:curry_pot",
+  "ingredient": {
+    "item": "minecraft:bread"
+  },
+  "result": {
+    "id": "eidolon_edoni:bread_with_curry",
+    "count": 1
+  }
+}

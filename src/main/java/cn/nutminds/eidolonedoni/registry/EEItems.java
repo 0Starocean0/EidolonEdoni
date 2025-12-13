@@ -5,7 +5,11 @@ import alexthw.eidolon_repraised.common.item.Tiers;
 import cn.nutminds.eidolonedoni.EEFoodValues;
 import cn.nutminds.eidolonedoni.EidolonEdoni;
 import cn.nutminds.eidolonedoni.item.*;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.TagKey;
+import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -17,6 +21,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import vectorwing.farmersdelight.common.item.ConsumableItem;
 import vectorwing.farmersdelight.common.item.DrinkableItem;
 import vectorwing.farmersdelight.common.item.KnifeItem;
+import vectorwing.farmersdelight.common.registry.ModItems;
 
 import java.util.function.Supplier;
 
@@ -31,6 +36,13 @@ public class EEItems {
     }
     public static Item.Properties drinkItem() {
         return new Item.Properties().craftRemainder(Items.GLASS_BOTTLE).stacksTo(16);
+    }
+    public static Item.Properties curryFoodItem(Item item) {
+        Item.Properties properties = new Item.Properties()
+                .food(EEFoodValues.curryFood(item))
+                .stacksTo(item.getMaxStackSize(item.getDefaultInstance()));
+        if (item.hasCraftingRemainingItem()) properties.craftRemainder(item.getCraftingRemainingItem());
+        return properties;
     }
 
     public static final DeferredHolder<Item, Item> SILVER_KNIFE = ITEMS.register("silver_knife",
@@ -85,14 +97,55 @@ public class EEItems {
 
     public static final Supplier<Item>BECHAMEL = ITEMS.register("bechamel_sauce", () ->
             new ConsumableItem(bowlFoodItem(EEFoodValues.BECHAMEL)));
+    public static final Supplier<Item>CURRY_CHUNK = ITEMS.register("curry_chunk", () ->
+            new Item(new Item.Properties()));
     public static final DeferredHolder<Item, BlockItem> CURRY_POT = ITEMS.register("pot_of_curry",
             () -> new BlockItem(EEBlocks.CURRY_POT.get(), new Item.Properties().stacksTo(1)));
     public static final Supplier<Item>CURRY_BREAD = ITEMS.register("bread_with_curry", () ->
-            new MerammerFoodItem(foodItem(EEFoodValues.CURRY_BREAD)));
+            new MerammerFoodItem(curryFoodItem(Items.BREAD)));
     public static final Supplier<Item>CURRY_RICE = ITEMS.register("rice_with_curry", () ->
-            new MerammerFoodItem(bowlFoodItem(EEFoodValues.CURRY_RICE)));
+            new MerammerFoodItem(curryFoodItem(ModItems.COOKED_RICE.get())));
+    public static final Supplier<Item> CURRY_FISH_BALL = ITEMS.register("curry_fish_ball", () ->
+            new MerammerFoodItem(bowlFoodItem(EEFoodValues.CURRY_FISH_BALL)));
+    public static final Supplier<Item> CURRY_PORKCHOP = ITEMS.register("curry_porkchop", () ->
+            new MerammerFoodItem(bowlFoodItem(EEFoodValues.CURRY_PORKCHOP)));
+    public static final Supplier<Item> SEAFOOD_CURRY = ITEMS.register("seafood_curry", () ->
+            new MerammerFoodItem(bowlFoodItem(EEFoodValues.SEAFOOD_CURRY)));
+    public static final Supplier<Item> RABBIT_CURRY = ITEMS.register("rabbit_curry", () ->
+            new MerammerFoodItem(bowlFoodItem(EEFoodValues.RABBIT_CURRY)));
     public static final Supplier<Item>CREAM_OF_MUSHROOM_SOUP = ITEMS.register("cream_of_mushroom_soup", () ->
             new MerammerFoodItem(bowlFoodItem(EEFoodValues.CREAM_OF_MUSHROOM_SOUP)));
+    //Compat Curry Foods
+    public static Supplier<Item>CURRY_RUSTIC_LOAF = ITEMS.register("rustic_loaf_slice_with_curry", () ->
+            new MerammerFoodItem(curryFoodItem(BuiltInRegistries.ITEM.get(
+                    ResourceLocation.fromNamespaceAndPath("cookscollection", "rustic_loaf_slice")))));
+    public static Supplier<Item>CURRY_TORTILLA = ITEMS.register("tortilla_with_curry", () ->
+            new MerammerFoodItem(curryFoodItem(BuiltInRegistries.ITEM.get(
+                    ResourceLocation.fromNamespaceAndPath("culturaldelights", "tortilla")))));
+    public static Supplier<Item>CURRY_BREAD_SLICES = ITEMS.register("slices_of_bread_with_curry", () ->
+            new MerammerFoodItem(curryFoodItem(BuiltInRegistries.ITEM.get(
+                    ResourceLocation.fromNamespaceAndPath("mynethersdelight", "slices_of_bread")))));
+    public static Supplier<Item>CURRY_TOASTS = ITEMS.register("toasts_with_curry", () ->
+            new MerammerFoodItem(curryFoodItem(BuiltInRegistries.ITEM.get(
+                    ResourceLocation.fromNamespaceAndPath("mynethersdelight", "toasts")))));
+    public static Supplier<Item>CURRY_FRIED_DOUGH = ITEMS.register("fried_dough_with_curry", () ->
+            new MerammerFoodItem(curryFoodItem(BuiltInRegistries.ITEM.get(
+                    ResourceLocation.fromNamespaceAndPath("rusticdelight", "fried_dough")))));
+    {
+        if (!ModList.get().isLoaded("cookscollection")) {
+            CURRY_RUSTIC_LOAF = null;
+        }
+        if (!ModList.get().isLoaded("culturaldelights")) {
+            CURRY_TORTILLA = null;
+        }
+        if (!ModList.get().isLoaded("mynethersdelight")) {
+            CURRY_BREAD_SLICES = null;
+            CURRY_TOASTS = null;
+        }
+        if (!ModList.get().isLoaded("rusticdelight")) {
+            CURRY_FRIED_DOUGH = null;
+        }
+    }
 
     public static final Supplier<Item>CREAM_PASTA_WITH_PETALS = ITEMS.register("cream_pasta_with_petals", () ->
             new MerammerFoodItem(bowlFoodItem(EEFoodValues.CREAM_PASTA_WITH_PETALS)));

@@ -1,0 +1,19 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:jungle_leaves"
+    }
+  ],
+  "result": [
+    {
+      "chance": 0.2,
+      "item": {
+        "id": "eidolon_repraised:sildrian_seed"
+      }
+    }
+  ],
+  "tool": {
+    "tag": "eidolon_edoni:foraging_tools"
+  }
+}

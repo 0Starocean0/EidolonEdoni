@@ -1,0 +1,21 @@
+{
+  "values": [
+    "eidolon_repraised:enchanted_ash",
+    {
+      "id": "#c:salt",
+      "required": false
+    },
+    {
+      "id": "cookscollection:salt",
+      "required": false
+    },
+    {
+      "id": "#c:crops/white_pepper",
+      "required": false
+    },
+    {
+      "id": "#c:crops/lemongrass",
+      "required": false
+    }
+  ]
+}

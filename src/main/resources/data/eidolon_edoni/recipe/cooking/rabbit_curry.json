@@ -1,0 +1,32 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:tag_empty",
+      "tag": "c:crops/eggplant"
+    }
+  ],
+  "type": "farmersdelight:cooking",
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "eidolon_edoni:curry_chunk"
+    },
+    {
+      "tag": "eidolon_edoni:rabbit_curry_spices"
+    },
+    {
+      "item": "minecraft:rabbit"
+    },
+    {
+      "item": "eidolon_repraised:avennian_sprig"
+    },
+    {
+      "tag": "c:foods/leafy_green"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "count": 1,
+    "id": "eidolon_edoni:rabbit_curry"
+  }
+}

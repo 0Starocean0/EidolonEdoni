@@ -7,22 +7,22 @@
   "experience": 1.0,
   "ingredients": [
     {
-      "item": "eidolon_repraised:merammer_resin"
+      "item": "eidolon_edoni:curry_chunk"
     },
     {
-      "tag": "eidolon_edoni:curry_spices"
+      "item": "eidolon_edoni:curry_chunk"
     },
     {
-      "tag": "eidolon_edoni:curry_spices"
-    },
-    {
-      "tag": "eidolon_edoni:curry_spices"
+      "tag": "c:crops/potato"
     },
     {
       "tag": "c:crops/potato"
     },
     {
       "tag": "c:crops/carrot"
+    },
+    {
+      "tag": "c:foods/vegetable"
     }
   ],
   "recipe_book_tab": "meals",

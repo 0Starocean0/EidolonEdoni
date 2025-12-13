@@ -2,6 +2,7 @@ package cn.nutminds.eidolonedoni.registry;
 
 import cn.nutminds.eidolonedoni.EidolonEdoni;
 import cn.nutminds.eidolonedoni.compat.barbequesdelight.BBQDelightIntegration;
+import cn.nutminds.eidolonedoni.compat.vampiresdelight.VampiresDelightIntegration;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -37,9 +38,29 @@ public class EECreativeTab{
                     output.accept(BBQDelightIntegration.GRILLED_SPROUT_SKEWER.get());
                 }
                 output.accept(EEItems.BECHAMEL.get());
+                output.accept(EEItems.CURRY_CHUNK.get());
                 output.accept(EEItems.CURRY_POT.get());
                 output.accept(EEItems.CURRY_BREAD.get());
                 output.accept(EEItems.CURRY_RICE.get());
+                if (ModList.get().isLoaded("cookscollection")) {
+                    output.accept(EEItems.CURRY_RUSTIC_LOAF.get());
+                }
+                if (ModList.get().isLoaded("culturaldelights")) {
+                    output.accept(EEItems.CURRY_TORTILLA.get());
+                }
+                if (ModList.get().isLoaded("mynethersdelight")) {
+                    output.accept(EEItems.CURRY_BREAD_SLICES.get());
+                    output.accept(EEItems.CURRY_TOASTS.get());
+                }
+                if (ModList.get().isLoaded("rusticdelight")) {
+                    output.accept(EEItems.CURRY_FRIED_DOUGH.get());
+                }
+                if (ModList.get().isLoaded("vampiresdelight")) {
+                    output.accept(VampiresDelightIntegration.CURRY_RICE_BREAD.get());
+                }
+                output.accept(EEItems.CURRY_FISH_BALL.get());
+                output.accept(EEItems.CURRY_PORKCHOP.get());
+                output.accept(EEItems.SEAFOOD_CURRY.get());
                 output.accept(EEItems.CREAM_OF_MUSHROOM_SOUP.get());
                 output.accept(EEItems.CREAM_PASTA_WITH_PETALS.get());
                 output.accept(EEItems.OANNA_MOONCAKE.get());
@@ -50,6 +71,7 @@ public class EECreativeTab{
                 output.accept(EEItems.SILDRIAN_BEEF.get());
                 output.accept(EEItems.MIXED_PORRIDGE.get());
                 output.accept(EEItems.SILDRIAN_TEA.get());
+                output.accept(EEItems.RABBIT_CURRY.get());
                 if (!ModList.get().isLoaded("barbequesdelight")) {
                     output.accept(EEItems.GRLLED_AVENNIAN_SPRIG_BALE.get());
                     output.accept(EEItems.GRILLED_AVENNIAN_SPRIG.get());

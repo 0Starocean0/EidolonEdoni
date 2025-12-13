@@ -1,36 +1,51 @@
 package cn.nutminds.eidolonedoni.block;
 
+import cn.nutminds.eidolonedoni.block.entity.AvennianSprigBaleBlockEntity;
+import cn.nutminds.eidolonedoni.registry.EEBlockEntityTypes;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.EntityBlock;
 import net.minecraft.world.level.block.Mirror;
 import net.minecraft.world.level.block.Rotation;
+import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.entity.BlockEntityTicker;
+import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
-import vectorwing.farmersdelight.common.tag.ModTags;
+import net.minecraft.world.level.block.state.properties.IntegerProperty;
+
+import javax.annotation.Nullable;
 
 @SuppressWarnings("deprecation")
-public class AvennianSprigBaleBlock extends Block
-{
+public class AvennianSprigBaleBlock extends Block implements EntityBlock {
+
+    public static final int cookTime = 600;
+    public static final IntegerProperty COOKED_TICKS = IntegerProperty.create("cooked_ticks", 0, cookTime);
     public static final DirectionProperty FACING = BlockStateProperties.FACING;
 
     public AvennianSprigBaleBlock(Properties properties) {
         super(properties);
-        this.registerDefaultState(this.getStateDefinition().any().setValue(FACING, Direction.UP));
+        this.registerDefaultState(this.getStateDefinition().any().setValue(COOKED_TICKS, 0).setValue(FACING, Direction.UP));
     }
 
-    public void scheduleTick(ServerLevel level, BlockPos pos) {
-        if (!level.isClientSide);
-        BlockState belowState = level.getBlockState(pos.below());
-        if (belowState.is(ModTags.HEAT_SOURCES) || belowState.is(ModTags.HEAT_CONDUCTORS));
-        level.scheduleTick(pos, this, 600);
+    @Nullable
+    @Override
+    public BlockEntity newBlockEntity(BlockPos pos, BlockState state) {
+        return new AvennianSprigBaleBlockEntity(pos, state);
+    }
+
+    @SuppressWarnings("unchecked")
+    @Override
+    public <T extends BlockEntity> BlockEntityTicker<T> getTicker(Level level, BlockState state, BlockEntityType<T> type) {
+        return type == EEBlockEntityTypes.AVENNIAN_SPRIG_BALE.get() ? (BlockEntityTicker<T>)
+                (level1, state1, pos, blockEntity) -> AvennianSprigBaleBlockEntity.tick(level1, pos, state1, blockEntity) : null;
     }
 
     @Override
@@ -60,7 +75,7 @@ public class AvennianSprigBaleBlock extends Block
 
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-        builder.add(FACING);
+        builder.add(COOKED_TICKS, FACING);
     }
 
     @Override

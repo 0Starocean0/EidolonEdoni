@@ -1,0 +1,31 @@
+{
+  "values": [
+    "minecraft:nether_wart",
+    "eidolon_repraised:sildrian_seed",
+    "eidolon_repraised:crimson_essence",
+    {
+      "id": "#c:fruits/coconut",
+      "required": false
+    },
+    {
+      "id": "#c:crops/onion",
+      "required": false
+    },
+    {
+      "id": "#c:crops/garlic",
+      "required": false
+    },
+    {
+      "id": "#c:crops/pepper",
+      "required": false
+    },
+    {
+      "id": "#c:crops/chili_pepper",
+      "required": false
+    },
+    {
+      "id": "#mynethersdelight:hot_spice",
+      "required": false
+    }
+  ]
+}

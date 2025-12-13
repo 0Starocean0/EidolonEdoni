@@ -3,7 +3,6 @@ package cn.nutminds.eidolonedoni.registry;
 import alexthw.eidolon_repraised.registries.Registry;
 import cn.nutminds.eidolonedoni.EidolonEdoni;
 import cn.nutminds.eidolonedoni.block.*;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SoundType;
@@ -13,7 +12,6 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import vectorwing.farmersdelight.common.block.CabinetBlock;
 import vectorwing.farmersdelight.common.block.PieBlock;
-import vectorwing.farmersdelight.common.registry.ModItems;
 
 import java.util.function.ToIntFunction;
 
@@ -47,7 +45,7 @@ public class EEBlocks {
             () -> new HeartTerrineBlock(Block.Properties.ofFullCopy(Blocks.CAKE), EEItems.HEART_TERRINE_SLICE));
 
     public static final DeferredBlock<Block> CURRY_POT = BLOCKS.register("pot_of_curry",
-            () -> new CurryPotBlock(Block.Properties.ofFullCopy(Blocks.CAKE).sound(SoundType.LANTERN), () -> Items.BREAD, ModItems.COOKED_RICE, EEItems.CURRY_BREAD, EEItems.CURRY_RICE, true));
+            () -> new CurryPotBlock(Block.Properties.ofFullCopy(Blocks.CAKE).sound(SoundType.LANTERN), true));
 
     public static final DeferredBlock<Block> OANNA_MOONCAKE = BLOCKS.register("oanna_mooncake",
             () -> new PieBlock(Block.Properties.ofFullCopy(Blocks.CAKE), EEItems.OANNA_MOONCAKE_SLICE));

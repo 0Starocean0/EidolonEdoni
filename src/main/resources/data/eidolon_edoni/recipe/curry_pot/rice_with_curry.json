@@ -1,0 +1,10 @@
+{
+  "type": "eidolon_edoni:curry_pot",
+  "ingredient": {
+    "item": "farmersdelight:cooked_rice"
+  },
+  "result": {
+    "id": "eidolon_edoni:rice_with_curry",
+    "count": 1
+  }
+}

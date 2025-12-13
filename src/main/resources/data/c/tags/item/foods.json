@@ -24,6 +24,30 @@
     "eidolon_edoni:stuffed_wither_skeleton_skull_bowl",
     {
       "id": "eidolon_edoni:grilled_avennian_sprig",
+      "required": false
+    },
+    {
+      "id": "eidolon_edoni:rustic_loaf_slice_with_curry",
+      "required": "false"
+    },
+    {
+      "id": "eidolon_edoni:tortilla_with_curry",
+      "required": "false"
+    },
+    {
+      "id": "eidolon_edoni:slices_of_bread_with_curry",
+      "required": "false"
+    },
+    {
+      "id": "eidolon_edoni:toasts_with_curry",
+      "required": "false"
+    },
+    {
+      "id": "eidolon_edoni:fried_dough_with_curry",
+      "required": "false"
+    },
+    {
+      "id": "eidolon_edoni:rice_bread_with_curry",
       "required": "false"
     }
   ]

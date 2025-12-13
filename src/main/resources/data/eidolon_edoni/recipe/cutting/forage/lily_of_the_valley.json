@@ -1,0 +1,25 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:lily_of_the_valley"
+    }
+  ],
+  "result": [
+    {
+      "item": {
+        "count": 2,
+        "id": "minecraft:white_dye"
+      }
+    },
+    {
+      "chance": 0.2,
+      "item": {
+        "id": "eidolon_repraised:merammer_root"
+      }
+    }
+  ],
+  "tool": {
+    "tag": "eidolon_edoni:foraging_tools"
+  }
+}

@@ -39,6 +39,5 @@ public class EEEffects {
                     .addAttributeModifier(Attributes.FLYING_SPEED,
                     ResourceLocation.fromNamespaceAndPath(EidolonEdoni.MODID, "fettered"),
                     -1, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
-
     public static final Holder<MobEffect> REANIMATE = EFFECTS.register("reanimate", ReanimateEffect::new);
 }

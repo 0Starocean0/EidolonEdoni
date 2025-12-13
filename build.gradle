@@ -28,6 +28,10 @@ repositories {
             includeGroup "curse.maven"
         }
     }
+    maven {
+        name = "TerraformersMC"
+        url = "https://maven.terraformersmc.com/"
+    }
 }
 
 base {
@@ -122,12 +126,21 @@ configurations {
 
 dependencies {
     implementation "curse.maven:farmers-delight-398521:6917256"
-    implementation ("com.alexthw.eidolon_repraised:eidolon_repraised-1.21.1:0.5.0.0-pre4.20") {transitive=false}
+    implementation ("com.alexthw.eidolon_repraised:eidolon_repraised-1.21.1:0.5.0.0-pre9.34") {transitive=false}
 
     compileOnly ("curse.maven:barbeques-delight-1007788:6849166")
+    compileOnly "curse.maven:thirst-was-taken-679270:7017923"
+    compileOnly "dev.emi:emi-neoforge:1.1.22+1.21.1:api"
 
     //Integration test
     //runtimeOnly ("curse.maven:barbeques-delight-1007788:6849166")
+    //runtimeOnly("curse.maven:thirst-was-taken-679270:7017923")
+    //runtimeOnly ("curse.maven:cooks-collection-1222140:6660051")
+    //runtimeOnly ("curse.maven:vampires-delight-939092:7223876")
+    //runtimeOnly ("curse.maven:my-nethers-delight-1003673:6938550")
+    //runtimeOnly ("curse.maven:rustic-delight-1106612:7190140")
+    //runtimeOnly ("curse.maven:cultural-delights-574622:6659969")
+    //runtimeOnly "dev.emi:emi-neoforge:1.1.22+1.21.1"
 }
 
 var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {

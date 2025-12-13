@@ -1,0 +1,19 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:lily_pad"
+    }
+  ],
+  "result": [
+    {
+      "chance": 0.2,
+      "item": {
+        "id": "eidolon_repraised:oanna_bloom"
+      }
+    }
+  ],
+  "tool": {
+    "tag": "eidolon_edoni:foraging_tools"
+  }
+}

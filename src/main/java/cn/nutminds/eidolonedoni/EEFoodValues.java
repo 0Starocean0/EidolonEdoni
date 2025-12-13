@@ -5,6 +5,7 @@ import cn.nutminds.eidolonedoni.registry.EEEffects;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
+import net.minecraft.world.item.Item;
 import vectorwing.farmersdelight.common.registry.ModEffects;
 
 public class EEFoodValues {
@@ -26,14 +27,20 @@ public class EEFoodValues {
             .fast().alwaysEdible().build();
     public static final FoodProperties BECHAMEL = (new FoodProperties.Builder())
             .nutrition(2).saturationModifier(0.4F).build();
-    public static final FoodProperties CURRY_BREAD = (new FoodProperties.Builder())
-            .nutrition(7).saturationModifier(0.6F)
-            .effect(() -> new MobEffectInstance(ModEffects.NOURISHMENT, 3600, 0), 1.0F)
-            .build();
-    public static final FoodProperties CURRY_RICE = (new FoodProperties.Builder())
-            .nutrition(8).saturationModifier(0.6F)
-            .effect(() -> new MobEffectInstance(ModEffects.NOURISHMENT, 3600, 0), 1.0F)
-            .build();
+    public static FoodProperties curryFood(Item item) {
+        FoodProperties food = item.getDefaultInstance().getFoodProperties(null);
+        if (food != null) {
+            return new FoodProperties(
+                    (int) (food.nutrition() * 1.25),
+                    (float) (food.saturation() / food.nutrition() / 2 * 1.25),
+                    food.canAlwaysEat(),
+                    food.eatSeconds(),
+                    food.usingConvertsTo(),
+                    food.effects()
+            );
+        }
+        return null;
+    }
     public static final FoodProperties CREAM_OF_MUSHROOM_SOUP = (new FoodProperties.Builder())
             .nutrition(14).saturationModifier(0.75F)
             .effect(() -> new MobEffectInstance(ModEffects.COMFORT, 6000, 0), 1.0F)
@@ -132,5 +139,19 @@ public class EEFoodValues {
     public static final FoodProperties SPROUT_SKEWER = (new FoodProperties.Builder())
             .nutrition(6).saturationModifier(0.6F)
             .effect(() -> new MobEffectInstance(EidolonPotions.ANCHORED_EFFECT, 1200, 0), 1.0F)
+            .build();
+    public static final FoodProperties CURRY_FISH_BALL = (new FoodProperties.Builder())
+            .effect(() -> new MobEffectInstance(ModEffects.NOURISHMENT, 6000, 0), 1.0F)
+            .nutrition(12).saturationModifier(0.75F).build();
+    public static final FoodProperties CURRY_PORKCHOP = (new FoodProperties.Builder())
+            .effect(() -> new MobEffectInstance(ModEffects.NOURISHMENT, 6000, 0), 1.0F)
+            .nutrition(12).saturationModifier(0.8F).build();
+    public static final FoodProperties SEAFOOD_CURRY = (new FoodProperties.Builder())
+            .effect(() -> new MobEffectInstance(ModEffects.NOURISHMENT, 6000, 0), 1.0F)
+            .nutrition(14).saturationModifier(0.8F).build();
+    public static final FoodProperties RABBIT_CURRY = (new FoodProperties.Builder())
+            .nutrition(14).saturationModifier(0.75F)
+            .effect(() -> new MobEffectInstance(ModEffects.NOURISHMENT, 6000, 0), 1.0F)
+            .effect(() -> new MobEffectInstance(EEEffects.CLINGING, 6000, 0), 1.0F)
             .build();
 }

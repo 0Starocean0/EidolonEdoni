@@ -1,0 +1,19 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:crimson_fungus"
+    }
+  ],
+  "result": [
+    {
+      "chance": 0.2,
+      "item": {
+        "id": "eidolon_repraised:mirecap"
+      }
+    }
+  ],
+  "tool": {
+    "tag": "eidolon_edoni:foraging_tools"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "culturaldelights"
+    }
+  ],
+  "type": "eidolon_edoni:curry_pot",
+  "ingredient": {
+    "item": "culturaldelights:tortilla"
+  },
+  "result": {
+    "id": "eidolon_edoni:tortilla_with_curry",
+    "count": 1
+  }
+}

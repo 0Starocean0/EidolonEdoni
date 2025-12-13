@@ -1,0 +1,7 @@
+{
+  "parent": "emi:item/half_item",
+  "textures": {
+    "first": "eidolon_repraised:item/enchanted_ash",
+    "second": "eidolon_edoni:item/curry_porkchop"
+  }
+}

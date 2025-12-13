@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "eidolon_edoni:item/rice_bread_with_curry"
+  }
+}
