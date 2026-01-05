@@ -29,5 +29,9 @@ public class EEBlockEntityTypes {
                 EEBlocks.ILLWOOD_CABINET.get(),
                 EEBlocks.POLISHED_CABINET.get()
         );
+        event.modify(ModBlockEntityTypes.CUTTING_BOARD.get(),
+                EEBlocks.ILLWOOD_CUTTING_BOARD.get(),
+                EEBlocks.POLISHED_CUTTING_BOARD.get()
+        );
     }
 }

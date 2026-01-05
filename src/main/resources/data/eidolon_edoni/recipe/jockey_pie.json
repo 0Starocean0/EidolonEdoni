@@ -1,4 +1,15 @@
 {
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "cookscollection"
+        }
+      ]
+    }
+  ],
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "group": "jockey_pie",

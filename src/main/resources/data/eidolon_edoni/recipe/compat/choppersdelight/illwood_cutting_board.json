@@ -1,0 +1,26 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "choppersdelight"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "eidolon_repraised:illwood_planks"
+    },
+    "/": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "/##",
+    "/##"
+  ],
+  "result": {
+    "count": 1,
+    "id": "eidolon_edoni:illwood_cutting_board"
+  }
+}

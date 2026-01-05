@@ -33,7 +33,7 @@
   "tag.item.eidolon_edoni.rabbit_curry_spices": "Rabbit Curry Spices",
   "tag.item.eidolon_edoni.seafood_curry_spices": "Seafood Curry Spices",
   "item.eidolon_edoni.cream_of_mushroom_soup": "Cream of Mushroom Soup",
-  "eidolon_edoni.tooltip.merammer_food": "Upgrades 1 Beneficial Effect",
+  "eidolon_edoni.tooltip.merammer_food": "Upgrades Beneficial Effects %s Times",
   "item.eidolon_edoni.cream_pasta_with_petals": "Cream Pasta with Petals",
   "block.eidolon_edoni.oanna_mooncake": "Oanna Mooncake",
   "item.eidolon_edoni.oanna_mooncake_slice": "Slice of Oanna Mooncake",
@@ -124,5 +124,8 @@
   "item.eidolon_edoni.slices_of_bread_with_curry": "Slices of Bread with Curry",
   "item.eidolon_edoni.toasts_with_curry": "Toasts with Curry",
   "item.eidolon_edoni.fried_dough_with_curry": "Fried Dough with Curry",
-  "item.eidolon_edoni.rice_bread_with_curry": "Rice Bread with Curry"
+  "item.eidolon_edoni.rice_bread_with_curry": "Rice Bread with Curry",
+
+  "block.eidolon_edoni.polished_cutting_board": "Polished Wood Cutting Board",
+  "block.eidolon_edoni.illwood_cutting_board": "Illwood Cutting Board"
 }

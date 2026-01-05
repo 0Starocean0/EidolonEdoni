@@ -6,14 +6,18 @@ import alexthw.eidolon_repraised.registries.EidolonPotions;
 import alexthw.eidolon_repraised.registries.Registry;
 import cn.nutminds.eidolonedoni.EEConfig;
 import cn.nutminds.eidolonedoni.EidolonEdoni;
+import cn.nutminds.eidolonedoni.registry.EEDataComponentTypes;
 import cn.nutminds.eidolonedoni.registry.EEEffects;
 import cn.nutminds.eidolonedoni.registry.EEItems;
+import net.minecraft.core.Holder;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.InteractionHand;
+import net.minecraft.world.effect.MobEffect;
+import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.*;
@@ -24,14 +28,18 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3;
+import net.neoforged.bus.ConsumerEventHandler;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.event.entity.living.*;
 import net.neoforged.neoforge.event.tick.EntityTickEvent;
 import vectorwing.farmersdelight.common.registry.ModItems;
 
+import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Iterator;
 
 @EventBusSubscriber(modid = EidolonEdoni.MODID)
 public class EEServerEvents {
@@ -41,6 +49,39 @@ public class EEServerEvents {
     }
 
     public static final TagKey<EntityType<?>> IMMUNE_TO_FETTERED = create("immune_to_fettered");
+
+    @SubscribeEvent
+    public static void onFoodConsume(LivingEntityUseItemEvent.Finish event) {
+        if (event.getItem().getComponents().has(EEDataComponentTypes.MERAMMER_FOOD.get())) {
+            LivingEntity consumer = event.getEntity();
+            Level level = consumer.getCommandSenderWorld();
+            Iterator<MobEffectInstance> itr = consumer.getActiveEffects().iterator();
+            ArrayList<Holder<MobEffect>> compatibleEffects = new ArrayList<>();
+
+
+            while (itr.hasNext()) {
+                MobEffectInstance effect = itr.next();
+                if (effect.getEffect().value().getCategory().equals(MobEffectCategory.BENEFICIAL)) {
+                    compatibleEffects.add(effect.getEffect());
+                }
+            }
+            level.registryAccess().registryOrThrow(Registries.MOB_EFFECT).getTagOrEmpty(TagKey.create(Registries.MOB_EFFECT, EidolonEdoni.modid("merammer_food_blacklist"))).forEach(compatibleEffects::remove);
+
+            if (!compatibleEffects.isEmpty()) {
+                for (int i = 0; i < event.getItem().getComponents().get(EEDataComponentTypes.MERAMMER_FOOD.get()); i++) {
+                    MobEffectInstance selectedEffect = consumer.getEffect(compatibleEffects.get(level.random.nextInt(compatibleEffects.size())));
+                    if (selectedEffect != null) {
+                        if (selectedEffect.getDuration() > 1) {
+                            consumer.removeEffect(selectedEffect.getEffect());
+                            consumer.addEffect(new MobEffectInstance(selectedEffect.getEffect(),
+                                    selectedEffect.getDuration() / (EEConfig.MERAMMER_FOOD_DURATION_RATE.get()),
+                                    selectedEffect.getAmplifier() + 1));
+                        }
+                    }
+                }
+            }
+        }
+    }
 
     @SubscribeEvent
     static void onLivingDamageEvent(LivingDamageEvent.Post event) {

@@ -8,9 +8,11 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
+import net.neoforged.fml.ModList;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import vectorwing.farmersdelight.common.block.CabinetBlock;
+import vectorwing.farmersdelight.common.block.CuttingBoardBlock;
 import vectorwing.farmersdelight.common.block.PieBlock;
 
 import java.util.function.ToIntFunction;
@@ -60,4 +62,15 @@ public class EEBlocks {
             () -> new StuffedWitherSkeletonSkullBlock(Block.Properties.ofFullCopy(Blocks.WITHER_SKELETON_SKULL), EEItems.STUFFED_WITHER_SKELETON_SKULL_BOWL, true));
     public static final DeferredBlock<Block> JOCKEY_PIE = BLOCKS.register("jockey_pie",
             () -> new JockeyPieBlock(Block.Properties.ofFullCopy(Blocks.CAKE), EEItems.JOCKEY_PIE_SLICE));
+
+    public static DeferredBlock<Block> POLISHED_CUTTING_BOARD = BLOCKS.register("polished_cutting_board",
+            () -> new CuttingBoardBlock(Block.Properties.ofFullCopy(Registry.POLISHED_PLANKS.getBlock()).strength(2.0f).sound(SoundType.WOOD)));
+    public static DeferredBlock<Block> ILLWOOD_CUTTING_BOARD = BLOCKS.register("illwood_cutting_board",
+            () -> new CuttingBoardBlock(Block.Properties.ofFullCopy(Registry.ILLWOOD_PLANKS.getBlock()).strength(2.0f).sound(SoundType.WOOD)));
+    {
+        if (!ModList.get().isLoaded("choppersdelight")) {
+            POLISHED_CUTTING_BOARD = null;
+            ILLWOOD_CUTTING_BOARD = null;
+        }
+    }
 }

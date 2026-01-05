@@ -25,6 +25,10 @@ public class EECreativeTab{
                 output.accept(EEItems.AVENNIAN_SPRIG_BALE.get());
                 output.accept(EEItems.ILLWOOD_CABINET.get());
                 output.accept(EEItems.POLISHED_CABINET.get());
+                if (ModList.get().isLoaded("choppersdelight")) {
+                    output.accept(EEItems.ILLWOOD_CUTTING_BOARD.get());
+                    output.accept(EEItems.POLISHED_CUTTING_BOARD.get());
+                }
                 output.accept(EEItems.SILVER_KNIFE.get());
                 output.accept(EEItems.ALL_ROUNDER.get());
                 output.accept(EEItems.RELAXING_INCENSE.get());

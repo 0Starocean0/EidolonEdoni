@@ -38,6 +38,7 @@ public class EidolonEdoni {
         EEEffects.EFFECTS.register(modBus);
         EERecipeTypes.RECIPE_TYPES.register(modBus);
         EERecipeTypes.RECIPE_SERIALIZERS.register(modBus);
+        EEDataComponentTypes.DATA_COMPONENTS.register(modBus);
         container.registerConfig(ModConfig.Type.COMMON, EEConfig.SPEC);
 
         if (ModList.get().isLoaded("barbequesdelight")) {

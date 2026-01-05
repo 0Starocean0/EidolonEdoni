@@ -1,7 +1,7 @@
 {
   "parent": "emi:item/half_item",
   "textures": {
-    "first": "eidolon_repraised:item/crimson_essence",
+    "first": "eidolon_repraised:item/refined_crimson",
     "second": "eidolon_edoni:item/seafood_curry"
   }
 }

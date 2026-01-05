@@ -1,0 +1,11 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "crabbersdelight"
+    }
+  ],
+  "values": [
+    "crabbersdelight:coconut_halve"
+  ]
+}

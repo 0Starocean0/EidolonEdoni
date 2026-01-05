@@ -5,14 +5,11 @@
       "values": [
         {
           "type": "neoforge:tag_empty",
-          "tag": "c:fruits/coconut"
+          "tag": "c:crops/lemongrass"
         },
         {
-          "type": "neoforge:not",
-          "value": {
-            "type": "neoforge:tag_empty",
-            "tag": "c:crops/lemongrass"
-          }
+          "type": "neoforge:mod_loaded",
+          "modid": "crabbersdelight"
         }
       ]
     }
@@ -27,13 +24,16 @@
       "tag": "eidolon_edoni:curry_porkchop_spices"
     },
     {
+      "item": "crabbersdelight:coconut_milk"
+    },
+    {
       "tag": "c:foods/milk"
     },
     {
       "item": "minecraft:porkchop"
     },
     {
-      "tag": "c:crops/lemongrass"
+      "tag": "c:foods/vegetable"
     }
   ],
   "recipe_book_tab": "meals",

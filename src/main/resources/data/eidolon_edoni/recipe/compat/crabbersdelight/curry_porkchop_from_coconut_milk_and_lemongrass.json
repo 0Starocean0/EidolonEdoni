@@ -4,8 +4,8 @@
       "type": "neoforge:and",
       "values": [
         {
-          "type": "neoforge:tag_empty",
-          "tag": "c:fruits/coconut"
+          "type": "neoforge:mod_loaded",
+          "modid": "crabbersdelight"
         },
         {
           "type": "neoforge:not",
@@ -25,6 +25,9 @@
     },
     {
       "tag": "eidolon_edoni:curry_porkchop_spices"
+    },
+    {
+      "item": "crabbersdelight:coconut_milk"
     },
     {
       "tag": "c:foods/milk"

@@ -1,7 +1,7 @@
 {
   "parent": "emi:item/half_item",
   "textures": {
-    "first": "eidolon_edoni:item/sprouting_fungus",
+    "first": "eidolon_repraised:item/warped_sprouts",
     "second": "eidolon_edoni:item/rabbit_curry"
   }
 }

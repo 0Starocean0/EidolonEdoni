@@ -1,0 +1,7 @@
+{
+  "parent": "farmersdelight:block/cutting_board",
+  "textures": {
+    "particle": "eidolon_edoni:block/illwood_cutting_board",
+    "top": "eidolon_edoni:block/illwood_cutting_board"
+  }
+}

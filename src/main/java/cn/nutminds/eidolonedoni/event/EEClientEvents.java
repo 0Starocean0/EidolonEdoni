@@ -4,6 +4,7 @@ import alexthw.eidolon_repraised.registries.Registry;
 import cn.nutminds.eidolonedoni.EidolonEdoni;
 import cn.nutminds.eidolonedoni.client.ElderStoveRenderer;
 import cn.nutminds.eidolonedoni.registry.EEBlockEntityTypes;
+import cn.nutminds.eidolonedoni.registry.EEDataComponentTypes;
 import cn.nutminds.eidolonedoni.registry.EEItems;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.component.DataComponents;
@@ -24,9 +25,9 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 import net.neoforged.neoforge.event.entity.player.ItemTooltipEvent;
+import vectorwing.farmersdelight.common.item.ConsumableItem;
 
 import java.util.List;
-
 
 @EventBusSubscriber(modid = EidolonEdoni.MODID, value = Dist.CLIENT)
 public class EEClientEvents {
@@ -61,6 +62,12 @@ public class EEClientEvents {
                 }
                 tooltip.add(effectText.withStyle(effectInstance.getEffect().value().getCategory().getTooltipFormatting()));
             }
+        }
+        if (stack.has(EEDataComponentTypes.MERAMMER_FOOD)) {
+            tooltip.add(Component.translatable(EidolonEdoni.MODID + ".tooltip.merammer_food",
+                    stack.getComponents().getOrDefault(EEDataComponentTypes.MERAMMER_FOOD.get(), 1))
+                    .withStyle(ChatFormatting.BLUE)
+            );
         }
     }
 }

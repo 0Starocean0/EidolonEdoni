@@ -1,0 +1,43 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "cookscollection"
+    }
+  ],
+  "type": "cookscollection:baking",
+  "ingredients": [
+    {
+      "item": "eidolon_repraised:mirecap"
+    },
+    {
+      "item": "eidolon_repraised:mirecap"
+    },
+    {
+      "item": "eidolon_repraised:mirecap"
+    },
+    {
+      "tag": "c:foods/cooked_chicken"
+    },
+    {
+      "tag": "c:foods/cooked_chicken"
+    },
+    {
+      "tag": "c:foods/cooked_chicken"
+    },
+    {
+      "tag": "eidolon_repraised:zombie_food"
+    },
+    {
+      "item": "farmersdelight:pie_crust"
+    },
+    {
+      "tag": "eidolon_repraised:zombie_food"
+    }
+  ],
+  "result": {
+    "id": "eidolon_edoni:jockey_pie",
+    "count": 1
+  },
+  "cookingtime": 200
+}

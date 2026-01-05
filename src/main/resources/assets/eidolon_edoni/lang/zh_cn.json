@@ -33,7 +33,7 @@
   "tag.item.eidolon_edoni.rabbit_curry_spices": "兔肉咖喱香料",
   "tag.item.eidolon_edoni.seafood_curry_spices": "海鲜咖喱香料",
   "item.eidolon_edoni.cream_of_mushroom_soup": "奶油蘑菇汤",
-  "eidolon_edoni.tooltip.merammer_food": "升级1个增益效果",
+  "eidolon_edoni.tooltip.merammer_food": "升级%s次增益效果",
   "item.eidolon_edoni.cream_pasta_with_petals": "花瓣奶油意面",
   "block.eidolon_edoni.oanna_mooncake": "净莲月饼",
   "item.eidolon_edoni.oanna_mooncake_slice": "净莲月饼切片",
@@ -124,5 +124,8 @@
   "item.eidolon_edoni.slices_of_bread_with_curry": "咖喱面包片",
   "item.eidolon_edoni.toasts_with_curry": "咖喱吐司",
   "item.eidolon_edoni.fried_dough_with_curry": "咖喱炸面团",
-  "item.eidolon_edoni.rice_bread_with_curry": "咖喱稻米面包"
+  "item.eidolon_edoni.rice_bread_with_curry": "咖喱稻米面包",
+
+  "block.eidolon_edoni.polished_cutting_board": "抛光木砧板",
+  "block.eidolon_edoni.illwood_cutting_board": "灾厄木砧板"
 }

@@ -135,7 +135,7 @@ dependencies {
     //Integration test
     //runtimeOnly ("curse.maven:barbeques-delight-1007788:6849166")
     //runtimeOnly("curse.maven:thirst-was-taken-679270:7017923")
-    //runtimeOnly ("curse.maven:cooks-collection-1222140:6660051")
+    runtimeOnly ("curse.maven:cooks-collection-1222140:6660051")
     //runtimeOnly ("curse.maven:vampires-delight-939092:7223876")
     //runtimeOnly ("curse.maven:my-nethers-delight-1003673:6938550")
     //runtimeOnly ("curse.maven:rustic-delight-1106612:7190140")

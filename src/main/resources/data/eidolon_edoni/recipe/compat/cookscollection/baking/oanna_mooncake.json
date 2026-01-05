@@ -1,0 +1,43 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "cookscollection"
+    }
+  ],
+  "type": "cookscollection:baking",
+  "ingredients": [
+    {
+      "item": "eidolon_repraised:oanna_bloom"
+    },
+    {
+      "item": "eidolon_repraised:oanna_bloom"
+    },
+    {
+      "item": "eidolon_repraised:oanna_bloom"
+    },
+    {
+      "tag": "c:eggs"
+    },
+    {
+      "tag": "c:foods/milk"
+    },
+    {
+      "tag": "c:eggs"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "farmersdelight:pie_crust"
+    },
+    {
+      "item": "minecraft:sugar"
+    }
+  ],
+  "result": {
+    "id": "eidolon_edoni:oanna_mooncake",
+    "count": 1
+  },
+  "cookingtime": 200
+}
